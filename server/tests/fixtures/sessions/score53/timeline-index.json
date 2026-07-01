@@ -1,0 +1,217 @@
+{
+  "schema_version": "home-tutor.session-timeline-index.v1",
+  "session_id": "a1000001-0001-4001-8001-000000000001",
+  "duration_ms": 3595000,
+  "segments": [
+    {
+      "question_id": "q01",
+      "number": 1,
+      "start_ms": 11682,
+      "end_ms": 69333,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q02",
+      "number": 2,
+      "start_ms": 69833,
+      "end_ms": 179670,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q03",
+      "number": 3,
+      "start_ms": 180170,
+      "end_ms": 290008,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q04",
+      "number": 4,
+      "start_ms": 290508,
+      "end_ms": 348159,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q05",
+      "number": 5,
+      "start_ms": 348659,
+      "end_ms": 406309,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q06",
+      "number": 6,
+      "start_ms": 406809,
+      "end_ms": 694081,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q07",
+      "number": 7,
+      "start_ms": 694581,
+      "end_ms": 752232,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q08",
+      "number": 8,
+      "start_ms": 752732,
+      "end_ms": 810383,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q09",
+      "number": 9,
+      "start_ms": 810883,
+      "end_ms": 868533,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q10",
+      "number": 10,
+      "start_ms": 869033,
+      "end_ms": 926684,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q11",
+      "number": 11,
+      "start_ms": 927184,
+      "end_ms": 984835,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q12",
+      "number": 12,
+      "start_ms": 985335,
+      "end_ms": 1095172,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q13",
+      "number": 13,
+      "start_ms": 1095672,
+      "end_ms": 1153323,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q14",
+      "number": 14,
+      "start_ms": 1153823,
+      "end_ms": 1300191,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q15",
+      "number": 15,
+      "start_ms": 1300691,
+      "end_ms": 1410528,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q16",
+      "number": 16,
+      "start_ms": 1411028,
+      "end_ms": 1468679,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q17",
+      "number": 17,
+      "start_ms": 1469179,
+      "end_ms": 1579017,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q18",
+      "number": 18,
+      "start_ms": 1579517,
+      "end_ms": 1707992,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q19",
+      "number": 19,
+      "start_ms": 1708492,
+      "end_ms": 1766143,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q20",
+      "number": 20,
+      "start_ms": 1766643,
+      "end_ms": 2053915,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q21",
+      "number": 21,
+      "start_ms": 2054415,
+      "end_ms": 2164252,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q22",
+      "number": 22,
+      "start_ms": 2164752,
+      "end_ms": 2293227,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q23",
+      "number": 23,
+      "start_ms": 2293727,
+      "end_ms": 2507938,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q24",
+      "number": 24,
+      "start_ms": 2508438,
+      "end_ms": 2618275,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q25",
+      "number": 25,
+      "start_ms": 2618775,
+      "end_ms": 2728613,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q26",
+      "number": 26,
+      "start_ms": 2729113,
+      "end_ms": 2875481,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q27",
+      "number": 27,
+      "start_ms": 2875981,
+      "end_ms": 2952269,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q28",
+      "number": 28,
+      "start_ms": 2952769,
+      "end_ms": 3240041,
+      "verdict": "wrong"
+    },
+    {
+      "question_id": "q29",
+      "number": 29,
+      "start_ms": 3240541,
+      "end_ms": 3298192,
+      "verdict": "correct"
+    },
+    {
+      "question_id": "q30",
+      "number": 30,
+      "start_ms": 3298692,
+      "end_ms": 3593000,
+      "verdict": "wrong"
+    }
+  ]
+}

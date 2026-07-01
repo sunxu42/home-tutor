@@ -1,0 +1,105 @@
+{
+  "schema_version": "home-tutor.question-package.v1",
+  "session_id": "a1000002-0002-4002-8002-000000000002",
+  "question_id": "q15",
+  "grade_level": "primary",
+  "subject": "math",
+  "page_id": "page_1",
+  "index_on_page": 15,
+  "number": 15,
+  "question_type": "multiple_choice",
+  "status": "complete",
+  "updated_at": "2026-06-30T09:42:38.000Z",
+  "prompt": {
+    "text": "比是4：5，前项加12，要使比值不变，后项应（　）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "乘3"
+      },
+      {
+        "key": "B",
+        "text": "乘4"
+      },
+      {
+        "key": "C",
+        "text": "加12"
+      },
+      {
+        "key": "D",
+        "text": "加20"
+      }
+    ]
+  },
+  "layout": {
+    "regions": [
+      {
+        "region_id": "r_prompt_q15",
+        "role": "printed_prompt",
+        "bbox": {
+          "x": 1.01,
+          "y": 0.36,
+          "w": 0.42,
+          "h": 0.1
+        }
+      },
+      {
+        "region_id": "r_answer_q15",
+        "role": "student_answer",
+        "bbox": {
+          "x": 1.241,
+          "y": 0.415,
+          "w": 0.18,
+          "h": 0.04
+        }
+      },
+      {
+        "region_id": "r_scratch_q15",
+        "role": "scratch_work",
+        "bbox": {
+          "x": 1.03,
+          "y": 0.385,
+          "w": 0.35,
+          "h": 0.06
+        }
+      }
+    ]
+  },
+  "answer_timeline": [
+    {
+      "t_offset_ms": 1303400,
+      "kind": "appeared",
+      "text": "A",
+      "frame_id": "frame_00051",
+      "confidence": 0.92
+    }
+  ],
+  "final_answer": {
+    "text": "A",
+    "confidence": 0.92
+  },
+  "focus_segments": [
+    {
+      "segment_index": 1,
+      "start_ms": 1278900,
+      "end_ms": 1386888,
+      "duration_ms": 107988
+    }
+  ],
+  "process_metrics": {
+    "first_touch_ms": 1278900,
+    "last_change_ms": 1303400,
+    "active_duration_ms": 107988,
+    "idle_periods_ms": [],
+    "revision_count": 0,
+    "stuck": false
+  },
+  "scratch_work": [],
+  "key_moments": [
+    {
+      "label": "final_answer",
+      "t_offset_ms": 1303400,
+      "frame_id": "frame_00051"
+    }
+  ]
+}

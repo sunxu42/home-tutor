@@ -1,0 +1,105 @@
+{
+  "schema_version": "home-tutor.question-package.v1",
+  "session_id": "b2000001-0001-4001-8001-000000000001",
+  "question_id": "q18",
+  "grade_level": "primary",
+  "subject": "math",
+  "page_id": "page_1",
+  "index_on_page": 18,
+  "number": 18,
+  "question_type": "multiple_choice",
+  "status": "complete",
+  "updated_at": "2026-06-30T09:42:38.000Z",
+  "prompt": {
+    "text": "根据扇形统计图，参加乒乓球课程大约有（　）人。",
+    "options": [
+      {
+        "key": "A",
+        "text": "20"
+      },
+      {
+        "key": "B",
+        "text": "30"
+      },
+      {
+        "key": "C",
+        "text": "60"
+      },
+      {
+        "key": "D",
+        "text": "120"
+      }
+    ]
+  },
+  "layout": {
+    "regions": [
+      {
+        "region_id": "r_prompt_q18",
+        "role": "printed_prompt",
+        "bbox": {
+          "x": 1.01,
+          "y": 0.78,
+          "w": 0.42,
+          "h": 0.1
+        }
+      },
+      {
+        "region_id": "r_answer_q18",
+        "role": "student_answer",
+        "bbox": {
+          "x": 1.241,
+          "y": 0.835,
+          "w": 0.18,
+          "h": 0.04
+        }
+      },
+      {
+        "region_id": "r_scratch_q18",
+        "role": "scratch_work",
+        "bbox": {
+          "x": 1.03,
+          "y": 0.805,
+          "w": 0.35,
+          "h": 0.06
+        }
+      }
+    ]
+  },
+  "answer_timeline": [
+    {
+      "t_offset_ms": 1630481,
+      "kind": "appeared",
+      "text": "C",
+      "frame_id": "frame_00060",
+      "confidence": 0.92
+    }
+  ],
+  "final_answer": {
+    "text": "C",
+    "confidence": 0.92
+  },
+  "focus_segments": [
+    {
+      "segment_index": 1,
+      "start_ms": 1605981,
+      "end_ms": 1736618,
+      "duration_ms": 130637
+    }
+  ],
+  "process_metrics": {
+    "first_touch_ms": 1605981,
+    "last_change_ms": 1630481,
+    "active_duration_ms": 130637,
+    "idle_periods_ms": [],
+    "revision_count": 0,
+    "stuck": false
+  },
+  "scratch_work": [],
+  "key_moments": [
+    {
+      "label": "final_answer",
+      "t_offset_ms": 1630481,
+      "frame_id": "frame_00060"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "b2000002-0002-4002-8002-000000000002",
+  "question_id": "q29",
+  "analysis_status": "ready",
+  "verdict": "correct",
+  "reference_answer": "60%",
+  "summary": "这题完成得很好！",
+  "explanation_paragraphs": [
+    "第 29 题你的答案是正确的。",
+    "关键步骤都想到了，继续保持。"
+  ],
+  "error_classification": {
+    "category": "correct"
+  },
+  "process_comment": "写得比较快，说明这类题你已经比较熟练。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "a1000003-0003-4003-8003-000000000003",
+  "question_id": "q17",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "C",
+  "summary": "提价降价不能抵消",
+  "explanation_paragraphs": [
+    "第 17 题你的答案是：A。",
+    "先涨 20% 再降 20%，基数已经变了。",
+    "正确答案是：C。"
+  ],
+  "error_classification": {
+    "category": "concept_error",
+    "subcategory": "percent_change",
+    "confidence": 0.88
+  },
+  "process_comment": "书写节奏平稳，步骤比较清楚。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "c3000001-0001-4001-8001-000000000001",
+  "question_id": "q30",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "B15% D35% 共400人",
+  "summary": "统计图百分比差了一点",
+  "explanation_paragraphs": [
+    "第 30 题你的答案是：B15% D34% 共400人。",
+    "先求总人数，再反推各项百分比。",
+    "正确答案是：B15% D35% 共400人。"
+  ],
+  "error_classification": {
+    "category": "calculation_error",
+    "subcategory": "percentage_table",
+    "confidence": 0.88
+  },
+  "process_comment": "这道题你写了大约 4 分钟，中间停笔较久，说明在认真想。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

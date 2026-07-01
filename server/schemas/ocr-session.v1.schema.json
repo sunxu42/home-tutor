@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "home-tutor.ocr-session.v1",
+  "title": "OcrSessionRecord",
+  "description": "Authoritative temporal OCR record for a homework capture session. Process state is reconstructed by replaying events; snapshots are not stored in v1.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "session_id",
+    "started_at",
+    "ended_at",
+    "questions",
+    "regions",
+    "frames",
+    "events"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "home-tutor.ocr-session.v1"
+    },
+    "session_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "grade_level": {
+      "type": "string",
+      "enum": ["primary"]
+    },
+    "subject": {
+      "type": "string",
+      "enum": ["math"]
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pages": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/page" }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/question" }
+    },
+    "regions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/region" }
+    },
+    "frames": {
+      "type": "array",
+      "description": "Sparse key-frame index. Images are stored externally; optional frame_id on events references entries here.",
+      "items": { "$ref": "#/$defs/frame" }
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Authoritative event stream. Replay events at or before t_offset_ms to reconstruct region text and session timeline.",
+      "items": { "$ref": "#/$defs/event" }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "bbox": {
+      "type": "object",
+      "required": ["x", "y", "w", "h"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 },
+        "w": { "type": "number", "minimum": 0, "maximum": 1 },
+        "h": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "page": {
+      "type": "object",
+      "required": ["page_id", "index"],
+      "additionalProperties": false,
+      "properties": {
+        "page_id": { "type": "string" },
+        "index": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": ["question_id", "index_on_page", "prompt_text"],
+      "additionalProperties": false,
+      "properties": {
+        "question_id": { "type": "string" },
+        "page_id": { "type": "string" },
+        "index_on_page": { "type": "integer", "minimum": 1 },
+        "prompt_text": { "type": "string" },
+        "prompt_region_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "answer_region_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "question_type": {
+          "type": "string",
+          "enum": ["fill_blank", "multiple_choice", "calculation", "word_problem", "unknown"]
+        }
+      }
+    },
+    "region": {
+      "type": "object",
+      "required": ["region_id", "role", "bbox"],
+      "additionalProperties": false,
+      "properties": {
+        "region_id": { "type": "string" },
+        "question_id": { "type": ["string", "null"] },
+        "role": {
+          "type": "string",
+          "enum": ["printed_prompt", "student_answer", "scratch_work", "unknown"]
+        },
+        "bbox": { "$ref": "#/$defs/bbox" }
+      }
+    },
+    "frame": {
+      "type": "object",
+      "required": ["frame_id", "t_offset_ms", "captured_at", "image_uri"],
+      "additionalProperties": false,
+      "properties": {
+        "frame_id": { "type": "string" },
+        "t_offset_ms": { "type": "integer", "minimum": 0 },
+        "captured_at": { "type": "string", "format": "date-time" },
+        "image_uri": { "type": "string" },
+        "page_id": { "type": "string" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["event_id", "type", "t_offset_ms"],
+      "additionalProperties": false,
+      "properties": {
+        "event_id": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "session.start",
+            "session.end",
+            "page.detected",
+            "question.focus",
+            "question.blur",
+            "answer.appeared",
+            "answer.changed",
+            "answer.erased",
+            "idle.start",
+            "idle.end",
+            "ocr.low_confidence"
+          ]
+        },
+        "t_offset_ms": { "type": "integer", "minimum": 0 },
+        "frame_id": { "type": "string" },
+        "question_id": { "type": "string" },
+        "region_id": { "type": "string" },
+        "page_id": { "type": "string" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    }
+  }
+}

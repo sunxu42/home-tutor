@@ -1,0 +1,31 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "c3000001-0001-4001-8001-000000000001",
+  "question_id": "q20",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "①4  ②-13/24  ③63  ④1/8",
+  "summary": "第④题分数运算粗心",
+  "explanation_paragraphs": [
+    "第 20 题你的答案是：① 4  ② -13/24  ③ 63  ④ 3/16。",
+    "最后一步通分再检查一下。",
+    "正确答案是：①4  ②-13/24  ③63  ④1/8。"
+  ],
+  "error_classification": {
+    "category": "calculation_error",
+    "subcategory": "fraction_ops",
+    "confidence": 0.88
+  },
+  "process_comment": "这道题你写了大约 4 分钟，中间停笔较久，说明在认真想。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

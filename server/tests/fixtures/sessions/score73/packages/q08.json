@@ -1,0 +1,87 @@
+{
+  "schema_version": "home-tutor.question-package.v1",
+  "session_id": "b2000002-0002-4002-8002-000000000002",
+  "question_id": "q08",
+  "grade_level": "primary",
+  "subject": "math",
+  "page_id": "page_1",
+  "index_on_page": 8,
+  "number": 8,
+  "question_type": "fill_blank",
+  "status": "complete",
+  "updated_at": "2026-06-30T09:42:38.000Z",
+  "prompt": {
+    "text": "0和1的倒数都是它本身。（　）"
+  },
+  "layout": {
+    "regions": [
+      {
+        "region_id": "r_prompt_q08",
+        "role": "printed_prompt",
+        "bbox": {
+          "x": 0.53,
+          "y": 0.22,
+          "w": 0.42,
+          "h": 0.1
+        }
+      },
+      {
+        "region_id": "r_answer_q08",
+        "role": "student_answer",
+        "bbox": {
+          "x": 0.761,
+          "y": 0.275,
+          "w": 0.18,
+          "h": 0.04
+        }
+      },
+      {
+        "region_id": "r_scratch_q08",
+        "role": "scratch_work",
+        "bbox": {
+          "x": 0.55,
+          "y": 0.245,
+          "w": 0.35,
+          "h": 0.06
+        }
+      }
+    ]
+  },
+  "answer_timeline": [
+    {
+      "t_offset_ms": 777232,
+      "kind": "appeared",
+      "text": "×",
+      "frame_id": "frame_00030",
+      "confidence": 0.92
+    }
+  ],
+  "final_answer": {
+    "text": "×",
+    "confidence": 0.92
+  },
+  "focus_segments": [
+    {
+      "segment_index": 1,
+      "start_ms": 752732,
+      "end_ms": 810383,
+      "duration_ms": 57651
+    }
+  ],
+  "process_metrics": {
+    "first_touch_ms": 752732,
+    "last_change_ms": 777232,
+    "active_duration_ms": 57651,
+    "idle_periods_ms": [],
+    "revision_count": 0,
+    "stuck": false
+  },
+  "scratch_work": [],
+  "key_moments": [
+    {
+      "label": "final_answer",
+      "t_offset_ms": 777232,
+      "frame_id": "frame_00030"
+    }
+  ]
+}

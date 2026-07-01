@@ -1,0 +1,93 @@
+{
+  "schema_version": "home-tutor.question-package.v1",
+  "session_id": "c3000001-0001-4001-8001-000000000001",
+  "question_id": "q23",
+  "grade_level": "primary",
+  "subject": "math",
+  "page_id": "page_3",
+  "index_on_page": 1,
+  "number": 23,
+  "question_type": "unknown",
+  "status": "complete",
+  "updated_at": "2026-06-30T09:42:38.000Z",
+  "prompt": {
+    "text": "根据台风移动路径（正西300km→西偏北40° 150km→北偏西20° 200km）画移动路线图。"
+  },
+  "layout": {
+    "regions": [
+      {
+        "region_id": "r_prompt_q23",
+        "role": "printed_prompt",
+        "bbox": {
+          "x": 0.05,
+          "y": 0.08,
+          "w": 0.42,
+          "h": 0.1
+        }
+      },
+      {
+        "region_id": "r_answer_q23",
+        "role": "student_answer",
+        "bbox": {
+          "x": 0.281,
+          "y": 0.135,
+          "w": 0.18,
+          "h": 0.04
+        }
+      },
+      {
+        "region_id": "r_scratch_q23",
+        "role": "scratch_work",
+        "bbox": {
+          "x": 0.07,
+          "y": 0.105,
+          "w": 0.35,
+          "h": 0.06
+        }
+      }
+    ]
+  },
+  "answer_timeline": [
+    {
+      "t_offset_ms": 2232925,
+      "kind": "appeared",
+      "text": "（路线图完成）",
+      "frame_id": "frame_00082",
+      "confidence": 0.92
+    }
+  ],
+  "final_answer": {
+    "text": "（路线图完成）",
+    "confidence": 0.92
+  },
+  "focus_segments": [
+    {
+      "segment_index": 1,
+      "start_ms": 2178425,
+      "end_ms": 2381840,
+      "duration_ms": 203415
+    }
+  ],
+  "process_metrics": {
+    "first_touch_ms": 2178425,
+    "last_change_ms": 2232925,
+    "active_duration_ms": 203415,
+    "idle_periods_ms": [],
+    "revision_count": 0,
+    "stuck": false
+  },
+  "scratch_work": [
+    {
+      "text": "（路线图完成",
+      "region_id": "r_scratch_q23",
+      "confidence": 0.92
+    }
+  ],
+  "key_moments": [
+    {
+      "label": "final_answer",
+      "t_offset_ms": 2232925,
+      "frame_id": "frame_00082"
+    }
+  ]
+}

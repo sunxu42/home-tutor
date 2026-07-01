@@ -1,0 +1,30 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "b2000002-0002-4002-8002-000000000002",
+  "question_id": "q21",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "3:4；5:9；5:12；3:2",
+  "summary": "这题还有提升空间",
+  "explanation_paragraphs": [
+    "第 21 题你的答案是：3:4；5:9；1:2；2:3。",
+    "正确答案是：3:4；5:9；5:12；3:2。",
+    "回忆一下本题用到的知识点，再练一道类似的。"
+  ],
+  "error_classification": {
+    "category": "unknown",
+    "confidence": 0.6
+  },
+  "process_comment": "书写节奏平稳，步骤比较清楚。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

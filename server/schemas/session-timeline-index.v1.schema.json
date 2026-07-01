@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "home-tutor.session-timeline-index.v1",
+  "title": "SessionTimelineIndex",
+  "description": "Precomputed timeline segments for the session review progress bar.",
+  "type": "object",
+  "required": ["schema_version", "session_id", "duration_ms", "segments"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "home-tutor.session-timeline-index.v1"
+    },
+    "session_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "duration_ms": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "segments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/segment" }
+    },
+    "gaps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/gap" }
+    }
+  },
+  "$defs": {
+    "segment": {
+      "type": "object",
+      "required": ["question_id", "number", "start_ms", "end_ms", "verdict"],
+      "additionalProperties": false,
+      "properties": {
+        "question_id": { "type": "string" },
+        "number": { "type": "integer", "minimum": 1 },
+        "start_ms": { "type": "integer", "minimum": 0 },
+        "end_ms": { "type": "integer", "minimum": 0 },
+        "verdict": {
+          "type": "string",
+          "enum": ["correct", "wrong", "unknown"]
+        }
+      }
+    },
+    "gap": {
+      "type": "object",
+      "required": ["start_ms", "end_ms"],
+      "additionalProperties": false,
+      "properties": {
+        "start_ms": { "type": "integer", "minimum": 0 },
+        "end_ms": { "type": "integer", "minimum": 0 },
+        "label": { "type": "string" }
+      }
+    }
+  }
+}

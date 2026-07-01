@@ -1,0 +1,123 @@
+{"event_id": "evt_00001", "type": "session.start", "t_offset_ms": 0, "frame_id": "frame_00001"}
+{"event_id": "evt_00002", "type": "page.detected", "t_offset_ms": 5000, "frame_id": "frame_00001", "page_id": "page_1"}
+{"event_id": "evt_00003", "type": "question.focus", "t_offset_ms": 11495, "frame_id": "frame_00002", "question_id": "q01", "page_id": "page_1"}
+{"event_id": "evt_00004", "type": "answer.appeared", "t_offset_ms": 18995, "frame_id": "frame_00003", "question_id": "q01", "region_id": "r_scratch_q01", "page_id": "page_1", "payload": {"text": "126+84=210", "confidence": 0.92}}
+{"event_id": "evt_00005", "type": "answer.appeared", "t_offset_ms": 50995, "frame_id": "frame_00004", "question_id": "q01", "region_id": "r_scratch_q01", "page_id": "page_1", "payload": {"text": "210×6/7", "confidence": 0.92}}
+{"event_id": "evt_00006", "type": "answer.appeared", "t_offset_ms": 65995, "frame_id": "frame_00005", "question_id": "q01", "region_id": "r_answer_q01", "page_id": "page_1", "payload": {"text": "180", "confidence": 0.92}}
+{"event_id": "evt_00007", "type": "question.blur", "t_offset_ms": 68171, "frame_id": "frame_00006", "question_id": "q01", "page_id": "page_1", "payload": {"next_question_id": "q02"}}
+{"event_id": "evt_00008", "type": "question.focus", "t_offset_ms": 68671, "frame_id": "frame_00007", "question_id": "q02", "page_id": "page_1"}
+{"event_id": "evt_00009", "type": "answer.appeared", "t_offset_ms": 93171, "frame_id": "frame_00008", "question_id": "q02", "region_id": "r_scratch_q02", "page_id": "page_1", "payload": {"text": "30", "confidence": 0.92}}
+{"event_id": "evt_00010", "type": "answer.appeared", "t_offset_ms": 123171, "frame_id": "frame_00009", "question_id": "q02", "region_id": "r_answer_q02", "page_id": "page_1", "payload": {"text": "30；24", "confidence": 0.92}}
+{"event_id": "evt_00011", "type": "question.blur", "t_offset_ms": 176659, "frame_id": "frame_00010", "question_id": "q02", "page_id": "page_1", "payload": {"next_question_id": "q03"}}
+{"event_id": "evt_00012", "type": "question.focus", "t_offset_ms": 177159, "frame_id": "frame_00011", "question_id": "q03", "page_id": "page_1"}
+{"event_id": "evt_00013", "type": "answer.appeared", "t_offset_ms": 201659, "frame_id": "frame_00012", "question_id": "q03", "region_id": "r_scratch_q03", "page_id": "page_1", "payload": {"text": "45", "confidence": 0.92}}
+{"event_id": "evt_00014", "type": "answer.appeared", "t_offset_ms": 231659, "frame_id": "frame_00013", "question_id": "q03", "region_id": "r_answer_q03", "page_id": "page_1", "payload": {"text": "45；67.5", "confidence": 0.92}}
+{"event_id": "evt_00015", "type": "question.blur", "t_offset_ms": 285147, "frame_id": "frame_00014", "question_id": "q03", "page_id": "page_1", "payload": {"next_question_id": "q04"}}
+{"event_id": "evt_00016", "type": "question.focus", "t_offset_ms": 285647, "frame_id": "frame_00015", "question_id": "q04", "page_id": "page_1"}
+{"event_id": "evt_00017", "type": "answer.appeared", "t_offset_ms": 310147, "frame_id": "frame_00016", "question_id": "q04", "region_id": "r_scratch_q04", "page_id": "page_1", "payload": {"text": "6", "confidence": 0.92}}
+{"event_id": "evt_00018", "type": "answer.appeared", "t_offset_ms": 340147, "frame_id": "frame_00017", "question_id": "q04", "region_id": "r_answer_q04", "page_id": "page_1", "payload": {"text": "6；18.84；28.26", "confidence": 0.92}}
+{"event_id": "evt_00019", "type": "question.blur", "t_offset_ms": 342324, "frame_id": "frame_00018", "question_id": "q04", "page_id": "page_1", "payload": {"next_question_id": "q05"}}
+{"event_id": "evt_00020", "type": "question.focus", "t_offset_ms": 342824, "frame_id": "frame_00019", "question_id": "q05", "page_id": "page_1"}
+{"event_id": "evt_00021", "type": "answer.appeared", "t_offset_ms": 367324, "frame_id": "frame_00020", "question_id": "q05", "region_id": "r_scratch_q05", "page_id": "page_1", "payload": {"text": "425", "confidence": 0.92}}
+{"event_id": "evt_00022", "type": "answer.appeared", "t_offset_ms": 397324, "frame_id": "frame_00021", "question_id": "q05", "region_id": "r_answer_q05", "page_id": "page_1", "payload": {"text": "425；400", "confidence": 0.92}}
+{"event_id": "evt_00023", "type": "question.blur", "t_offset_ms": 399500, "frame_id": "frame_00022", "question_id": "q05", "page_id": "page_1", "payload": {"next_question_id": "q06"}}
+{"event_id": "evt_00024", "type": "question.focus", "t_offset_ms": 400000, "frame_id": "frame_00023", "question_id": "q06", "page_id": "page_1"}
+{"event_id": "evt_00027", "type": "answer.appeared", "t_offset_ms": 424500, "frame_id": "frame_00024", "question_id": "q06", "region_id": "r_answer_q06", "page_id": "page_1", "payload": {"text": "21", "confidence": 0.92}}
+{"event_id": "evt_00025", "type": "idle.start", "t_offset_ms": 531800, "question_id": "q06", "page_id": "page_1"}
+{"event_id": "evt_00026", "type": "idle.end", "t_offset_ms": 626300, "question_id": "q06", "page_id": "page_1", "payload": {"duration_ms": 94500}}
+{"event_id": "evt_00028", "type": "question.blur", "t_offset_ms": 682448, "frame_id": "frame_00025", "question_id": "q06", "page_id": "page_1", "payload": {"next_question_id": "q07"}}
+{"event_id": "evt_00029", "type": "question.focus", "t_offset_ms": 682948, "frame_id": "frame_00026", "question_id": "q07", "page_id": "page_1"}
+{"event_id": "evt_00030", "type": "answer.appeared", "t_offset_ms": 707448, "frame_id": "frame_00027", "question_id": "q07", "region_id": "r_answer_q07", "page_id": "page_1", "payload": {"text": "×", "confidence": 0.92}}
+{"event_id": "evt_00031", "type": "question.blur", "t_offset_ms": 739625, "frame_id": "frame_00028", "question_id": "q07", "page_id": "page_1", "payload": {"next_question_id": "q08"}}
+{"event_id": "evt_00032", "type": "question.focus", "t_offset_ms": 740125, "frame_id": "frame_00029", "question_id": "q08", "page_id": "page_1"}
+{"event_id": "evt_00033", "type": "answer.appeared", "t_offset_ms": 764625, "frame_id": "frame_00030", "question_id": "q08", "region_id": "r_answer_q08", "page_id": "page_1", "payload": {"text": "√", "confidence": 0.92}}
+{"event_id": "evt_00034", "type": "question.blur", "t_offset_ms": 796801, "frame_id": "frame_00031", "question_id": "q08", "page_id": "page_1", "payload": {"next_question_id": "q09"}}
+{"event_id": "evt_00035", "type": "question.focus", "t_offset_ms": 797301, "frame_id": "frame_00032", "question_id": "q09", "page_id": "page_1"}
+{"event_id": "evt_00036", "type": "answer.appeared", "t_offset_ms": 821801, "frame_id": "frame_00033", "question_id": "q09", "region_id": "r_answer_q09", "page_id": "page_1", "payload": {"text": "√", "confidence": 0.92}}
+{"event_id": "evt_00037", "type": "question.blur", "t_offset_ms": 853977, "frame_id": "frame_00034", "question_id": "q09", "page_id": "page_1", "payload": {"next_question_id": "q10"}}
+{"event_id": "evt_00038", "type": "question.focus", "t_offset_ms": 854477, "frame_id": "frame_00035", "question_id": "q10", "page_id": "page_1"}
+{"event_id": "evt_00039", "type": "answer.appeared", "t_offset_ms": 878977, "frame_id": "frame_00036", "question_id": "q10", "region_id": "r_answer_q10", "page_id": "page_1", "payload": {"text": "×", "confidence": 0.92}}
+{"event_id": "evt_00040", "type": "question.blur", "t_offset_ms": 911153, "frame_id": "frame_00037", "question_id": "q10", "page_id": "page_1", "payload": {"next_question_id": "q11"}}
+{"event_id": "evt_00041", "type": "question.focus", "t_offset_ms": 911653, "frame_id": "frame_00038", "question_id": "q11", "page_id": "page_1"}
+{"event_id": "evt_00042", "type": "answer.appeared", "t_offset_ms": 936153, "frame_id": "frame_00039", "question_id": "q11", "region_id": "r_answer_q11", "page_id": "page_1", "payload": {"text": "√", "confidence": 0.92}}
+{"event_id": "evt_00043", "type": "question.blur", "t_offset_ms": 968329, "frame_id": "frame_00040", "question_id": "q11", "page_id": "page_1", "payload": {"next_question_id": "q12"}}
+{"event_id": "evt_00044", "type": "question.focus", "t_offset_ms": 968829, "frame_id": "frame_00041", "question_id": "q12", "page_id": "page_1"}
+{"event_id": "evt_00045", "type": "answer.appeared", "t_offset_ms": 993329, "frame_id": "frame_00042", "question_id": "q12", "region_id": "r_answer_q12", "page_id": "page_1", "payload": {"text": "C", "confidence": 0.92}}
+{"event_id": "evt_00046", "type": "question.blur", "t_offset_ms": 1076817, "frame_id": "frame_00043", "question_id": "q12", "page_id": "page_1", "payload": {"next_question_id": "q13"}}
+{"event_id": "evt_00047", "type": "question.focus", "t_offset_ms": 1077317, "frame_id": "frame_00044", "question_id": "q13", "page_id": "page_1"}
+{"event_id": "evt_00048", "type": "answer.appeared", "t_offset_ms": 1101817, "frame_id": "frame_00045", "question_id": "q13", "region_id": "r_answer_q13", "page_id": "page_1", "payload": {"text": "B", "confidence": 0.92}}
+{"event_id": "evt_00049", "type": "question.blur", "t_offset_ms": 1133994, "frame_id": "frame_00046", "question_id": "q13", "page_id": "page_1", "payload": {"next_question_id": "q14"}}
+{"event_id": "evt_00050", "type": "question.focus", "t_offset_ms": 1134494, "frame_id": "frame_00047", "question_id": "q14", "page_id": "page_1"}
+{"event_id": "evt_00053", "type": "answer.appeared", "t_offset_ms": 1158994, "frame_id": "frame_00048", "question_id": "q14", "region_id": "r_answer_q14", "page_id": "page_1", "payload": {"text": "B", "confidence": 0.92}}
+{"event_id": "evt_00051", "type": "idle.start", "t_offset_ms": 1200144, "question_id": "q14", "page_id": "page_1"}
+{"event_id": "evt_00052", "type": "idle.end", "t_offset_ms": 1247394, "question_id": "q14", "page_id": "page_1", "payload": {"duration_ms": 47250}}
+{"event_id": "evt_00054", "type": "question.blur", "t_offset_ms": 1278400, "frame_id": "frame_00049", "question_id": "q14", "page_id": "page_1", "payload": {"next_question_id": "q15"}}
+{"event_id": "evt_00055", "type": "question.focus", "t_offset_ms": 1278900, "frame_id": "frame_00050", "question_id": "q15", "page_id": "page_1"}
+{"event_id": "evt_00056", "type": "answer.appeared", "t_offset_ms": 1303400, "frame_id": "frame_00051", "question_id": "q15", "region_id": "r_answer_q15", "page_id": "page_1", "payload": {"text": "A", "confidence": 0.92}}
+{"event_id": "evt_00057", "type": "question.blur", "t_offset_ms": 1386888, "frame_id": "frame_00052", "question_id": "q15", "page_id": "page_1", "payload": {"next_question_id": "q16"}}
+{"event_id": "evt_00058", "type": "question.focus", "t_offset_ms": 1387388, "frame_id": "frame_00053", "question_id": "q16", "page_id": "page_1"}
+{"event_id": "evt_00059", "type": "answer.appeared", "t_offset_ms": 1411888, "frame_id": "frame_00054", "question_id": "q16", "region_id": "r_answer_q16", "page_id": "page_1", "payload": {"text": "A", "confidence": 0.92}}
+{"event_id": "evt_00060", "type": "question.blur", "t_offset_ms": 1444064, "frame_id": "frame_00055", "question_id": "q16", "page_id": "page_1", "payload": {"next_question_id": "q17"}}
+{"event_id": "evt_00061", "type": "question.focus", "t_offset_ms": 1444564, "frame_id": "frame_00056", "question_id": "q17", "page_id": "page_1"}
+{"event_id": "evt_00062", "type": "answer.appeared", "t_offset_ms": 1469064, "frame_id": "frame_00057", "question_id": "q17", "region_id": "r_answer_q17", "page_id": "page_1", "payload": {"text": "A", "confidence": 0.92}}
+{"event_id": "evt_00063", "type": "question.blur", "t_offset_ms": 1552553, "frame_id": "frame_00058", "question_id": "q17", "page_id": "page_1", "payload": {"next_question_id": "q18"}}
+{"event_id": "evt_00064", "type": "question.focus", "t_offset_ms": 1553053, "frame_id": "frame_00059", "question_id": "q18", "page_id": "page_1"}
+{"event_id": "evt_00065", "type": "answer.appeared", "t_offset_ms": 1577553, "frame_id": "frame_00060", "question_id": "q18", "region_id": "r_answer_q18", "page_id": "page_1", "payload": {"text": "A", "confidence": 0.92}}
+{"event_id": "evt_00066", "type": "page.detected", "t_offset_ms": 1676366, "frame_id": "frame_00061", "page_id": "page_2"}
+{"event_id": "evt_00067", "type": "question.blur", "t_offset_ms": 1679366, "frame_id": "frame_00062", "question_id": "q18", "page_id": "page_2", "payload": {"next_question_id": "q19"}}
+{"event_id": "evt_00068", "type": "question.focus", "t_offset_ms": 1679866, "frame_id": "frame_00063", "question_id": "q19", "page_id": "page_2"}
+{"event_id": "evt_00069", "type": "answer.appeared", "t_offset_ms": 1704366, "frame_id": "frame_00064", "question_id": "q19", "region_id": "r_scratch_q19", "page_id": "page_2", "payload": {"text": "25.5", "confidence": 0.92}}
+{"event_id": "evt_00070", "type": "answer.appeared", "t_offset_ms": 1734366, "frame_id": "frame_00065", "question_id": "q19", "region_id": "r_answer_q19", "page_id": "page_2", "payload": {"text": "25.5；8；0.04；1/16；0.75；28.26；3；6:5", "confidence": 0.92}}
+{"event_id": "evt_00071", "type": "question.blur", "t_offset_ms": 1736543, "frame_id": "frame_00066", "question_id": "q19", "page_id": "page_2", "payload": {"next_question_id": "q20"}}
+{"event_id": "evt_00072", "type": "question.focus", "t_offset_ms": 1737043, "frame_id": "frame_00067", "question_id": "q20", "page_id": "page_2"}
+{"event_id": "evt_00076", "type": "answer.appeared", "t_offset_ms": 1791543, "frame_id": "frame_00069", "question_id": "q20", "region_id": "r_answer_q20", "page_id": "page_2", "payload": {"text": "① 3.3  ② 1/48  ③ 55  ④ 1/4", "confidence": 0.92}}
+{"event_id": "evt_00075", "type": "answer.appeared", "t_offset_ms": 1796543, "frame_id": "frame_00068", "question_id": "q20", "region_id": "r_scratch_q20", "page_id": "page_2", "payload": {"text": "先算括号", "confidence": 0.92}}
+{"event_id": "evt_00073", "type": "idle.start", "t_offset_ms": 1868843, "question_id": "q20", "page_id": "page_2"}
+{"event_id": "evt_00074", "type": "idle.end", "t_offset_ms": 1963343, "question_id": "q20", "page_id": "page_2", "payload": {"duration_ms": 94500}}
+{"event_id": "evt_00077", "type": "question.blur", "t_offset_ms": 2019491, "frame_id": "frame_00070", "question_id": "q20", "page_id": "page_2", "payload": {"next_question_id": "q21"}}
+{"event_id": "evt_00078", "type": "question.focus", "t_offset_ms": 2019991, "frame_id": "frame_00071", "question_id": "q21", "page_id": "page_2"}
+{"event_id": "evt_00079", "type": "answer.appeared", "t_offset_ms": 2044491, "frame_id": "frame_00072", "question_id": "q21", "region_id": "r_scratch_q21", "page_id": "page_2", "payload": {"text": "3:4", "confidence": 0.92}}
+{"event_id": "evt_00080", "type": "answer.appeared", "t_offset_ms": 2074491, "frame_id": "frame_00073", "question_id": "q21", "region_id": "r_answer_q21", "page_id": "page_2", "payload": {"text": "3:4；5:9；1:2；2:3", "confidence": 0.92}}
+{"event_id": "evt_00081", "type": "question.blur", "t_offset_ms": 2127980, "frame_id": "frame_00074", "question_id": "q21", "page_id": "page_2", "payload": {"next_question_id": "q22"}}
+{"event_id": "evt_00082", "type": "question.focus", "t_offset_ms": 2128480, "frame_id": "frame_00075", "question_id": "q22", "page_id": "page_2"}
+{"event_id": "evt_00083", "type": "answer.appeared", "t_offset_ms": 2152980, "frame_id": "frame_00076", "question_id": "q22", "region_id": "r_answer_q22", "page_id": "page_2", "payload": {"text": "10cm²", "confidence": 0.92}}
+{"event_id": "evt_00084", "type": "page.detected", "t_offset_ms": 2251793, "frame_id": "frame_00077", "page_id": "page_3"}
+{"event_id": "evt_00085", "type": "question.blur", "t_offset_ms": 2254793, "frame_id": "frame_00078", "question_id": "q22", "page_id": "page_3", "payload": {"next_question_id": "q23"}}
+{"event_id": "evt_00086", "type": "question.focus", "t_offset_ms": 2255293, "frame_id": "frame_00079", "question_id": "q23", "page_id": "page_3"}
+{"event_id": "evt_00087", "type": "answer.appeared", "t_offset_ms": 2274793, "frame_id": "frame_00080", "question_id": "q23", "region_id": "r_scratch_q23", "page_id": "page_3", "payload": {"text": "（路线图完成", "confidence": 0.92}}
+{"event_id": "evt_00088", "type": "answer.appeared", "t_offset_ms": 2309793, "frame_id": "frame_00081", "question_id": "q23", "region_id": "r_answer_q23", "page_id": "page_3", "payload": {"text": "（路线图完成）", "confidence": 0.92}}
+{"event_id": "evt_00089", "type": "question.blur", "t_offset_ms": 2465905, "frame_id": "frame_00082", "question_id": "q23", "page_id": "page_3", "payload": {"next_question_id": "q24"}}
+{"event_id": "evt_00090", "type": "question.focus", "t_offset_ms": 2466405, "frame_id": "frame_00083", "question_id": "q24", "page_id": "page_3"}
+{"event_id": "evt_00091", "type": "answer.appeared", "t_offset_ms": 2485905, "frame_id": "frame_00084", "question_id": "q24", "region_id": "r_scratch_q24", "page_id": "page_3", "payload": {"text": "9.42cm", "confidence": 0.92}}
+{"event_id": "evt_00092", "type": "answer.appeared", "t_offset_ms": 2520905, "frame_id": "frame_00085", "question_id": "q24", "region_id": "r_answer_q24", "page_id": "page_3", "payload": {"text": "9.42cm²", "confidence": 0.92}}
+{"event_id": "evt_00093", "type": "question.blur", "t_offset_ms": 2574394, "frame_id": "frame_00086", "question_id": "q24", "page_id": "page_3", "payload": {"next_question_id": "q25"}}
+{"event_id": "evt_00094", "type": "question.focus", "t_offset_ms": 2574894, "frame_id": "frame_00087", "question_id": "q25", "page_id": "page_3"}
+{"event_id": "evt_00095", "type": "answer.appeared", "t_offset_ms": 2599394, "frame_id": "frame_00088", "question_id": "q25", "region_id": "r_scratch_q25", "page_id": "page_3", "payload": {"text": "2/5吨", "confidence": 0.92}}
+{"event_id": "evt_00096", "type": "answer.appeared", "t_offset_ms": 2629394, "frame_id": "frame_00089", "question_id": "q25", "region_id": "r_answer_q25", "page_id": "page_3", "payload": {"text": "2/5吨；5/36吨", "confidence": 0.92}}
+{"event_id": "evt_00097", "type": "question.blur", "t_offset_ms": 2682882, "frame_id": "frame_00090", "question_id": "q25", "page_id": "page_3", "payload": {"next_question_id": "q26"}}
+{"event_id": "evt_00098", "type": "question.focus", "t_offset_ms": 2683382, "frame_id": "frame_00091", "question_id": "q26", "page_id": "page_3"}
+{"event_id": "evt_00101", "type": "answer.appeared", "t_offset_ms": 2707882, "frame_id": "frame_00092", "question_id": "q26", "region_id": "r_scratch_q26", "page_id": "page_3", "payload": {"text": "秦7500", "confidence": 0.92}}
+{"event_id": "evt_00102", "type": "answer.appeared", "t_offset_ms": 2737882, "frame_id": "frame_00093", "question_id": "q26", "region_id": "r_answer_q26", "page_id": "page_3", "payload": {"text": "秦7500；汉7500", "confidence": 0.92}}
+{"event_id": "evt_00099", "type": "idle.start", "t_offset_ms": 2749032, "question_id": "q26", "page_id": "page_3"}
+{"event_id": "evt_00100", "type": "idle.end", "t_offset_ms": 2796282, "question_id": "q26", "page_id": "page_3", "payload": {"duration_ms": 47250}}
+{"event_id": "evt_00103", "type": "question.blur", "t_offset_ms": 2827288, "frame_id": "frame_00094", "question_id": "q26", "page_id": "page_3", "payload": {"next_question_id": "q27"}}
+{"event_id": "evt_00104", "type": "question.focus", "t_offset_ms": 2827788, "frame_id": "frame_00095", "question_id": "q27", "page_id": "page_3"}
+{"event_id": "evt_00105", "type": "answer.appeared", "t_offset_ms": 2852288, "frame_id": "frame_00096", "question_id": "q27", "region_id": "r_answer_q27", "page_id": "page_3", "payload": {"text": "24件", "confidence": 0.92}}
+{"event_id": "evt_00106", "type": "page.detected", "t_offset_ms": 2899790, "frame_id": "frame_00097", "page_id": "page_4"}
+{"event_id": "evt_00107", "type": "question.blur", "t_offset_ms": 2902790, "frame_id": "frame_00098", "question_id": "q27", "page_id": "page_4", "payload": {"next_question_id": "q28"}}
+{"event_id": "evt_00108", "type": "question.focus", "t_offset_ms": 2903290, "frame_id": "frame_00099", "question_id": "q28", "page_id": "page_4"}
+{"event_id": "evt_00112", "type": "answer.appeared", "t_offset_ms": 2957790, "frame_id": "frame_00101", "question_id": "q28", "region_id": "r_answer_q28", "page_id": "page_4", "payload": {"text": "① 6500m²  ② 400m  ③ 3.14m", "confidence": 0.92}}
+{"event_id": "evt_00111", "type": "answer.appeared", "t_offset_ms": 2972790, "frame_id": "frame_00100", "question_id": "q28", "region_id": "r_scratch_q28", "page_id": "page_4", "payload": {"text": "πr²", "confidence": 0.92}}
+{"event_id": "evt_00109", "type": "idle.start", "t_offset_ms": 3035090, "question_id": "q28", "page_id": "page_4"}
+{"event_id": "evt_00110", "type": "idle.end", "t_offset_ms": 3129590, "question_id": "q28", "page_id": "page_4", "payload": {"duration_ms": 94500}}
+{"event_id": "evt_00113", "type": "question.blur", "t_offset_ms": 3185739, "frame_id": "frame_00102", "question_id": "q28", "page_id": "page_4", "payload": {"next_question_id": "q29"}}
+{"event_id": "evt_00114", "type": "question.focus", "t_offset_ms": 3186239, "frame_id": "frame_00103", "question_id": "q29", "page_id": "page_4"}
+{"event_id": "evt_00115", "type": "answer.appeared", "t_offset_ms": 3210739, "frame_id": "frame_00104", "question_id": "q29", "region_id": "r_answer_q29", "page_id": "page_4", "payload": {"text": "60%", "confidence": 0.92}}
+{"event_id": "evt_00116", "type": "question.blur", "t_offset_ms": 3242915, "frame_id": "frame_00105", "question_id": "q29", "page_id": "page_4", "payload": {"next_question_id": "q30"}}
+{"event_id": "evt_00117", "type": "question.focus", "t_offset_ms": 3243415, "frame_id": "frame_00106", "question_id": "q30", "page_id": "page_4"}
+{"event_id": "evt_00120", "type": "answer.appeared", "t_offset_ms": 3267915, "frame_id": "frame_00107", "question_id": "q30", "region_id": "r_scratch_q30", "page_id": "page_4", "payload": {"text": "总人数300", "confidence": 0.92}}
+{"event_id": "evt_00121", "type": "answer.appeared", "t_offset_ms": 3297915, "frame_id": "frame_00108", "question_id": "q30", "region_id": "r_answer_q30", "page_id": "page_4", "payload": {"text": "总人数300；B20% D30%", "confidence": 0.92}}
+{"event_id": "evt_00118", "type": "idle.start", "t_offset_ms": 3375215, "question_id": "q30", "page_id": "page_4"}
+{"event_id": "evt_00119", "type": "idle.end", "t_offset_ms": 3469715, "question_id": "q30", "page_id": "page_4", "payload": {"duration_ms": 94500}}
+{"event_id": "evt_00122", "type": "question.blur", "t_offset_ms": 3533000, "frame_id": "frame_00109", "question_id": "q30", "page_id": "page_4"}
+{"event_id": "evt_00123", "type": "session.end", "t_offset_ms": 3535000, "frame_id": "frame_00109"}

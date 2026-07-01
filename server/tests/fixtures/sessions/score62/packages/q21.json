@@ -1,0 +1,93 @@
+{
+  "schema_version": "home-tutor.question-package.v1",
+  "session_id": "a1000003-0003-4003-8003-000000000003",
+  "question_id": "q21",
+  "grade_level": "primary",
+  "subject": "math",
+  "page_id": "page_2",
+  "index_on_page": 3,
+  "number": 21,
+  "question_type": "calculation",
+  "status": "complete",
+  "updated_at": "2026-06-30T09:42:38.000Z",
+  "prompt": {
+    "text": "化简比：5/8：5/6；0.25：0.45；500千克：1.2吨；1.2平方米：80平方分米"
+  },
+  "layout": {
+    "regions": [
+      {
+        "region_id": "r_prompt_q21",
+        "role": "printed_prompt",
+        "bbox": {
+          "x": 0.05,
+          "y": 0.36,
+          "w": 0.42,
+          "h": 0.1
+        }
+      },
+      {
+        "region_id": "r_answer_q21",
+        "role": "student_answer",
+        "bbox": {
+          "x": 0.281,
+          "y": 0.415,
+          "w": 0.18,
+          "h": 0.04
+        }
+      },
+      {
+        "region_id": "r_scratch_q21",
+        "role": "scratch_work",
+        "bbox": {
+          "x": 0.07,
+          "y": 0.385,
+          "w": 0.35,
+          "h": 0.06
+        }
+      }
+    ]
+  },
+  "answer_timeline": [
+    {
+      "t_offset_ms": 2040068,
+      "kind": "appeared",
+      "text": "3:4；5:9；1:2；2:3",
+      "frame_id": "frame_00073",
+      "confidence": 0.92
+    }
+  ],
+  "final_answer": {
+    "text": "3:4；5:9；1:2；2:3",
+    "confidence": 0.92
+  },
+  "focus_segments": [
+    {
+      "segment_index": 1,
+      "start_ms": 1985568,
+      "end_ms": 2091707,
+      "duration_ms": 106139
+    }
+  ],
+  "process_metrics": {
+    "first_touch_ms": 1985568,
+    "last_change_ms": 2040068,
+    "active_duration_ms": 106139,
+    "idle_periods_ms": [],
+    "revision_count": 0,
+    "stuck": false
+  },
+  "scratch_work": [
+    {
+      "text": "3:4",
+      "region_id": "r_scratch_q21",
+      "confidence": 0.92
+    }
+  ],
+  "key_moments": [
+    {
+      "label": "final_answer",
+      "t_offset_ms": 2040068,
+      "frame_id": "frame_00073"
+    }
+  ]
+}

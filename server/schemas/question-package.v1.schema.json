@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "home-tutor.question-package.v1",
+  "title": "QuestionProcessPackage",
+  "description": "Per-question derived package for LLM tutoring and future video scripts.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "session_id",
+    "question_id",
+    "prompt",
+    "answer_timeline",
+    "final_answer",
+    "focus_segments",
+    "process_metrics"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "home-tutor.question-package.v1"
+    },
+    "session_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "grade_level": {
+      "type": "string",
+      "enum": ["primary"]
+    },
+    "subject": {
+      "type": "string",
+      "enum": ["math"]
+    },
+    "prompt": {
+      "type": "object",
+      "required": ["text"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string" },
+        "ocr_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "key": { "type": "string", "pattern": "^[A-D]$" },
+              "text": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "answer_timeline": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/timeline_entry" }
+    },
+    "final_answer": {
+      "type": "object",
+      "required": ["text"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "process_metrics": {
+      "$ref": "#/$defs/process_metrics"
+    },
+    "focus_segments": {
+      "type": "array",
+      "description": "Discontinuous periods when the student worked on this question (supports cross-question jumps).",
+      "items": { "$ref": "#/$defs/focus_segment" }
+    },
+    "scratch_work": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "type": "string" },
+          "region_id": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "key_moments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/key_moment" }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["building", "complete", "updating"]
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "index_on_page": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "question_type": {
+      "type": "string",
+      "enum": ["fill_blank", "multiple_choice", "calculation", "word_problem", "unknown"]
+    },
+    "layout": {
+      "type": "object",
+      "required": ["regions"],
+      "additionalProperties": false,
+      "properties": {
+        "regions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/layout_region" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "layout_region": {
+      "type": "object",
+      "required": ["region_id", "role", "bbox"],
+      "additionalProperties": false,
+      "properties": {
+        "region_id": { "type": "string" },
+        "role": {
+          "type": "string",
+          "enum": ["printed_prompt", "student_answer", "scratch_work", "unknown"]
+        },
+        "bbox": { "$ref": "#/$defs/bbox" }
+      }
+    },
+    "bbox": {
+      "type": "object",
+      "required": ["x", "y", "w", "h"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 },
+        "w": { "type": "number", "minimum": 0, "maximum": 1 },
+        "h": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "timeline_entry": {
+      "type": "object",
+      "required": ["t_offset_ms", "kind", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "t_offset_ms": { "type": "integer", "minimum": 0 },
+        "kind": {
+          "type": "string",
+          "enum": ["appeared", "changed", "erased"]
+        },
+        "text": { "type": "string" },
+        "prev_text": { "type": "string" },
+        "frame_id": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "process_metrics": {
+      "type": "object",
+      "required": ["active_duration_ms", "revision_count"],
+      "additionalProperties": false,
+      "properties": {
+        "first_touch_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Derived: focus_segments[0].start_ms"
+        },
+        "last_change_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Derived: last answer_timeline entry or focus_segments[-1].end_ms"
+        },
+        "active_duration_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Sum of all focus_segments durations"
+        },
+        "idle_periods_ms": {
+          "type": "array",
+          "description": "Idle periods within focus_segments only",
+          "items": {
+            "type": "object",
+            "required": ["start_ms", "end_ms", "duration_ms"],
+            "additionalProperties": false,
+            "properties": {
+              "start_ms": { "type": "integer", "minimum": 0 },
+              "end_ms": { "type": "integer", "minimum": 0 },
+              "duration_ms": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "revision_count": { "type": "integer", "minimum": 0 },
+        "stuck": { "type": "boolean" }
+      }
+    },
+    "focus_segment": {
+      "type": "object",
+      "required": ["start_ms", "end_ms", "duration_ms"],
+      "additionalProperties": false,
+      "properties": {
+        "start_ms": { "type": "integer", "minimum": 0 },
+        "end_ms": { "type": "integer", "minimum": 0 },
+        "duration_ms": { "type": "integer", "minimum": 0 },
+        "segment_index": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based index of this visit to the question"
+        }
+      }
+    },
+    "key_moment": {
+      "type": "object",
+      "required": ["label", "t_offset_ms"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "t_offset_ms": { "type": "integer", "minimum": 0 },
+        "frame_id": { "type": "string" },
+        "image_uri": { "type": "string" }
+      }
+    }
+  }
+}

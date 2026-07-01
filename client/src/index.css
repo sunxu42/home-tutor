@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+}
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 30 6% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 6% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 6% 16%;
+    --primary: 162 18% 34%;
+    --primary-foreground: 36 33% 97%;
+    --secondary: 36 22% 92%;
+    --secondary-foreground: 30 6% 16%;
+    --muted: 36 18% 90%;
+    --muted-foreground: 30 4% 40%;
+    --accent: 36 22% 92%;
+    --accent-foreground: 30 6% 16%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 36 18% 88%;
+    --input: 36 18% 88%;
+    --ring: 162 18% 34%;
+    --radius: 0.5rem;
+
+    --font-serif: 'Noto Serif SC', 'Songti SC', serif;
+    --font-sans: 'Noto Sans SC', 'Heiti SC', sans-serif;
+  }
+
+  .dark {
+    --background: 240 10% 8%;
+    --foreground: 36 18% 90%;
+    --card: 240 10% 12%;
+    --card-foreground: 36 18% 90%;
+    --popover: 240 10% 12%;
+    --popover-foreground: 36 18% 90%;
+    --primary: 162 25% 45%;
+    --primary-foreground: 240 10% 8%;
+    --secondary: 240 8% 18%;
+    --secondary-foreground: 36 18% 90%;
+    --muted: 240 7% 20%;
+    --muted-foreground: 36 8% 55%;
+    --accent: 240 8% 18%;
+    --accent-foreground: 36 18% 90%;
+    --destructive: 0 55% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 8% 22%;
+    --input: 240 8% 22%;
+    --ring: 162 25% 45%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    margin: 0;
+    min-height: 100svh;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* 作业讲解回顾：按视口分档（手机 / 平板 / 桌面） */
+@layer components {
+  .session-review-shell {
+    width: 100%;
+    max-width: none;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .session-review-shell {
+      padding-inline: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .session-review-shell {
+      padding-inline: 2rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .session-review-shell {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .session-review-shell {
+      padding-inline: 3rem;
+    }
+  }
+
+  /* 主内容：题目 | 讲解（导航在 header） */
+  .session-review-layout {
+    display: grid;
+    gap: 0;
+    padding-block: 0.5rem 1rem;
+  }
+
+  .session-review-question {
+    padding: 0.75rem 0;
+  }
+
+  .session-review-tutor {
+    padding: 0.75rem 0;
+    border-top: 1px solid hsl(var(--border) / 0.5);
+    background: hsl(var(--secondary) / 0.25);
+  }
+
+  @media (min-width: 768px) {
+    .session-review-layout {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 0;
+      min-height: calc(100svh - 9rem);
+      padding-block: 0;
+    }
+
+    .session-review-question {
+      border-right: 1px solid hsl(var(--border) / 0.55);
+      padding: 1rem 1.25rem 1rem 0;
+      overflow-y: auto;
+      max-height: calc(100svh - 9rem);
+    }
+
+    .session-review-tutor {
+      border-top: none;
+      padding: 1rem 0 1rem 1.25rem;
+      overflow-y: auto;
+      max-height: calc(100svh - 9rem);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .session-review-layout {
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    }
+
+    .session-review-question {
+      padding: 1.25rem 1.5rem 1.25rem 0;
+    }
+
+    .session-review-tutor {
+      padding: 1.25rem 0 1.25rem 1.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .session-review-layout {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Build
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & cache
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+htmlcov/
+
+# Vite
+client/dist/
+
+# uv
+server/.venv/
+
+# Data (SQLite database)
+server/data/
+data/
+
+# Superpowers specs (user preference: do not commit)
+docs/superpowers/

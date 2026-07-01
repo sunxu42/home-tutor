@@ -1,0 +1,31 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "c3000001-0001-4001-8001-000000000001",
+  "question_id": "q28",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "①6962.5m²  ②357m  ③7.536m",
+  "summary": "起跑线前移距离算偏了",
+  "explanation_paragraphs": [
+    "第 28 题你的答案是：① 6962.5m²  ② 357m  ③ 7.54m。",
+    "第三问要和跑道宽、π 联系起来。",
+    "正确答案是：①6962.5m²  ②357m  ③7.536m。"
+  ],
+  "error_classification": {
+    "category": "calculation_error",
+    "subcategory": "track_offset",
+    "confidence": 0.88
+  },
+  "process_comment": "这道题你写了大约 4 分钟，中间停笔较久，说明在认真想。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

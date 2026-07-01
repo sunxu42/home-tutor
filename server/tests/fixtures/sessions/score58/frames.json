@@ -1,0 +1,767 @@
+{
+  "frames": [
+    {
+      "frame_id": "frame_00001",
+      "t_offset_ms": 0,
+      "captured_at": "2026-06-25T15:00:00.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00001.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00002",
+      "t_offset_ms": 11495,
+      "captured_at": "2026-06-25T15:00:11.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00002.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00003",
+      "t_offset_ms": 18995,
+      "captured_at": "2026-06-25T15:00:18.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00003.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00004",
+      "t_offset_ms": 50995,
+      "captured_at": "2026-06-25T15:00:50.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00004.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00005",
+      "t_offset_ms": 65995,
+      "captured_at": "2026-06-25T15:01:05.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00005.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00006",
+      "t_offset_ms": 68171,
+      "captured_at": "2026-06-25T15:01:08.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00006.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00007",
+      "t_offset_ms": 68671,
+      "captured_at": "2026-06-25T15:01:08.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00007.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00008",
+      "t_offset_ms": 93171,
+      "captured_at": "2026-06-25T15:01:33.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00008.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00009",
+      "t_offset_ms": 123171,
+      "captured_at": "2026-06-25T15:02:03.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00009.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00010",
+      "t_offset_ms": 176659,
+      "captured_at": "2026-06-25T15:02:56.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00010.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00011",
+      "t_offset_ms": 177159,
+      "captured_at": "2026-06-25T15:02:57.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00011.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00012",
+      "t_offset_ms": 201659,
+      "captured_at": "2026-06-25T15:03:21.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00012.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00013",
+      "t_offset_ms": 231659,
+      "captured_at": "2026-06-25T15:03:51.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00013.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00014",
+      "t_offset_ms": 285147,
+      "captured_at": "2026-06-25T15:04:45.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00014.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00015",
+      "t_offset_ms": 285647,
+      "captured_at": "2026-06-25T15:04:45.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00015.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00016",
+      "t_offset_ms": 310147,
+      "captured_at": "2026-06-25T15:05:10.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00016.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00017",
+      "t_offset_ms": 340147,
+      "captured_at": "2026-06-25T15:05:40.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00017.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00018",
+      "t_offset_ms": 342324,
+      "captured_at": "2026-06-25T15:05:42.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00018.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00019",
+      "t_offset_ms": 342824,
+      "captured_at": "2026-06-25T15:05:42.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00019.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00020",
+      "t_offset_ms": 367324,
+      "captured_at": "2026-06-25T15:06:07.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00020.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00021",
+      "t_offset_ms": 397324,
+      "captured_at": "2026-06-25T15:06:37.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00021.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00022",
+      "t_offset_ms": 399500,
+      "captured_at": "2026-06-25T15:06:39.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00022.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00023",
+      "t_offset_ms": 400000,
+      "captured_at": "2026-06-25T15:06:40.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00023.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00024",
+      "t_offset_ms": 424500,
+      "captured_at": "2026-06-25T15:07:04.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00024.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00025",
+      "t_offset_ms": 682448,
+      "captured_at": "2026-06-25T15:11:22.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00025.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00026",
+      "t_offset_ms": 682948,
+      "captured_at": "2026-06-25T15:11:22.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00026.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00027",
+      "t_offset_ms": 707448,
+      "captured_at": "2026-06-25T15:11:47.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00027.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00028",
+      "t_offset_ms": 739625,
+      "captured_at": "2026-06-25T15:12:19.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00028.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00029",
+      "t_offset_ms": 740125,
+      "captured_at": "2026-06-25T15:12:20.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00029.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00030",
+      "t_offset_ms": 764625,
+      "captured_at": "2026-06-25T15:12:44.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00030.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00031",
+      "t_offset_ms": 796801,
+      "captured_at": "2026-06-25T15:13:16.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00031.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00032",
+      "t_offset_ms": 797301,
+      "captured_at": "2026-06-25T15:13:17.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00032.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00033",
+      "t_offset_ms": 821801,
+      "captured_at": "2026-06-25T15:13:41.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00033.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00034",
+      "t_offset_ms": 853977,
+      "captured_at": "2026-06-25T15:14:13.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00034.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00035",
+      "t_offset_ms": 854477,
+      "captured_at": "2026-06-25T15:14:14.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00035.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00036",
+      "t_offset_ms": 878977,
+      "captured_at": "2026-06-25T15:14:38.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00036.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00037",
+      "t_offset_ms": 911153,
+      "captured_at": "2026-06-25T15:15:11.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00037.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00038",
+      "t_offset_ms": 911653,
+      "captured_at": "2026-06-25T15:15:11.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00038.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00039",
+      "t_offset_ms": 936153,
+      "captured_at": "2026-06-25T15:15:36.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00039.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00040",
+      "t_offset_ms": 968329,
+      "captured_at": "2026-06-25T15:16:08.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00040.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00041",
+      "t_offset_ms": 968829,
+      "captured_at": "2026-06-25T15:16:08.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00041.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00042",
+      "t_offset_ms": 993329,
+      "captured_at": "2026-06-25T15:16:33.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00042.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00043",
+      "t_offset_ms": 1076817,
+      "captured_at": "2026-06-25T15:17:56.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00043.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00044",
+      "t_offset_ms": 1077317,
+      "captured_at": "2026-06-25T15:17:57.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00044.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00045",
+      "t_offset_ms": 1101817,
+      "captured_at": "2026-06-25T15:18:21.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00045.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00046",
+      "t_offset_ms": 1133994,
+      "captured_at": "2026-06-25T15:18:53.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00046.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00047",
+      "t_offset_ms": 1134494,
+      "captured_at": "2026-06-25T15:18:54.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00047.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00048",
+      "t_offset_ms": 1158994,
+      "captured_at": "2026-06-25T15:19:18.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00048.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00049",
+      "t_offset_ms": 1278400,
+      "captured_at": "2026-06-25T15:21:18.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00049.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00050",
+      "t_offset_ms": 1278900,
+      "captured_at": "2026-06-25T15:21:18.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00050.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00051",
+      "t_offset_ms": 1303400,
+      "captured_at": "2026-06-25T15:21:43.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00051.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00052",
+      "t_offset_ms": 1386888,
+      "captured_at": "2026-06-25T15:23:06.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00052.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00053",
+      "t_offset_ms": 1387388,
+      "captured_at": "2026-06-25T15:23:07.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00053.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00054",
+      "t_offset_ms": 1411888,
+      "captured_at": "2026-06-25T15:23:31.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00054.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00055",
+      "t_offset_ms": 1444064,
+      "captured_at": "2026-06-25T15:24:04.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00055.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00056",
+      "t_offset_ms": 1444564,
+      "captured_at": "2026-06-25T15:24:04.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00056.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00057",
+      "t_offset_ms": 1469064,
+      "captured_at": "2026-06-25T15:24:29.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00057.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00058",
+      "t_offset_ms": 1552553,
+      "captured_at": "2026-06-25T15:25:52.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00058.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00059",
+      "t_offset_ms": 1553053,
+      "captured_at": "2026-06-25T15:25:53.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00059.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00060",
+      "t_offset_ms": 1577553,
+      "captured_at": "2026-06-25T15:26:17.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00060.jpg",
+      "page_id": "page_1"
+    },
+    {
+      "frame_id": "frame_00061",
+      "t_offset_ms": 1676366,
+      "captured_at": "2026-06-25T15:27:56.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00061.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00062",
+      "t_offset_ms": 1679366,
+      "captured_at": "2026-06-25T15:27:59.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00062.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00063",
+      "t_offset_ms": 1679866,
+      "captured_at": "2026-06-25T15:27:59.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00063.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00064",
+      "t_offset_ms": 1704366,
+      "captured_at": "2026-06-25T15:28:24.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00064.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00065",
+      "t_offset_ms": 1734366,
+      "captured_at": "2026-06-25T15:28:54.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00065.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00066",
+      "t_offset_ms": 1736543,
+      "captured_at": "2026-06-25T15:28:56.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00066.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00067",
+      "t_offset_ms": 1737043,
+      "captured_at": "2026-06-25T15:28:57.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00067.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00068",
+      "t_offset_ms": 1796543,
+      "captured_at": "2026-06-25T15:29:56.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00068.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00069",
+      "t_offset_ms": 1791543,
+      "captured_at": "2026-06-25T15:29:51.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00069.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00070",
+      "t_offset_ms": 2019491,
+      "captured_at": "2026-06-25T15:33:39.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00070.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00071",
+      "t_offset_ms": 2019991,
+      "captured_at": "2026-06-25T15:33:39.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00071.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00072",
+      "t_offset_ms": 2044491,
+      "captured_at": "2026-06-25T15:34:04.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00072.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00073",
+      "t_offset_ms": 2074491,
+      "captured_at": "2026-06-25T15:34:34.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00073.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00074",
+      "t_offset_ms": 2127980,
+      "captured_at": "2026-06-25T15:35:27.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00074.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00075",
+      "t_offset_ms": 2128480,
+      "captured_at": "2026-06-25T15:35:28.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00075.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00076",
+      "t_offset_ms": 2152980,
+      "captured_at": "2026-06-25T15:35:52.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00076.jpg",
+      "page_id": "page_2"
+    },
+    {
+      "frame_id": "frame_00077",
+      "t_offset_ms": 2251793,
+      "captured_at": "2026-06-25T15:37:31.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00077.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00078",
+      "t_offset_ms": 2254793,
+      "captured_at": "2026-06-25T15:37:34.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00078.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00079",
+      "t_offset_ms": 2255293,
+      "captured_at": "2026-06-25T15:37:35.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00079.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00080",
+      "t_offset_ms": 2274793,
+      "captured_at": "2026-06-25T15:37:54.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00080.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00081",
+      "t_offset_ms": 2309793,
+      "captured_at": "2026-06-25T15:38:29.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00081.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00082",
+      "t_offset_ms": 2465905,
+      "captured_at": "2026-06-25T15:41:05.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00082.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00083",
+      "t_offset_ms": 2466405,
+      "captured_at": "2026-06-25T15:41:06.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00083.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00084",
+      "t_offset_ms": 2485905,
+      "captured_at": "2026-06-25T15:41:25.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00084.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00085",
+      "t_offset_ms": 2520905,
+      "captured_at": "2026-06-25T15:42:00.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00085.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00086",
+      "t_offset_ms": 2574394,
+      "captured_at": "2026-06-25T15:42:54.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00086.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00087",
+      "t_offset_ms": 2574894,
+      "captured_at": "2026-06-25T15:42:54.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00087.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00088",
+      "t_offset_ms": 2599394,
+      "captured_at": "2026-06-25T15:43:19.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00088.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00089",
+      "t_offset_ms": 2629394,
+      "captured_at": "2026-06-25T15:43:49.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00089.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00090",
+      "t_offset_ms": 2682882,
+      "captured_at": "2026-06-25T15:44:42.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00090.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00091",
+      "t_offset_ms": 2683382,
+      "captured_at": "2026-06-25T15:44:43.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00091.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00092",
+      "t_offset_ms": 2707882,
+      "captured_at": "2026-06-25T15:45:07.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00092.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00093",
+      "t_offset_ms": 2737882,
+      "captured_at": "2026-06-25T15:45:37.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00093.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00094",
+      "t_offset_ms": 2827288,
+      "captured_at": "2026-06-25T15:47:07.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00094.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00095",
+      "t_offset_ms": 2827788,
+      "captured_at": "2026-06-25T15:47:07.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00095.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00096",
+      "t_offset_ms": 2852288,
+      "captured_at": "2026-06-25T15:47:32.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00096.jpg",
+      "page_id": "page_3"
+    },
+    {
+      "frame_id": "frame_00097",
+      "t_offset_ms": 2899790,
+      "captured_at": "2026-06-25T15:48:19.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00097.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00098",
+      "t_offset_ms": 2902790,
+      "captured_at": "2026-06-25T15:48:22.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00098.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00099",
+      "t_offset_ms": 2903290,
+      "captured_at": "2026-06-25T15:48:23.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00099.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00100",
+      "t_offset_ms": 2972790,
+      "captured_at": "2026-06-25T15:49:32.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00100.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00101",
+      "t_offset_ms": 2957790,
+      "captured_at": "2026-06-25T15:49:17.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00101.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00102",
+      "t_offset_ms": 3185739,
+      "captured_at": "2026-06-25T15:53:05.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00102.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00103",
+      "t_offset_ms": 3186239,
+      "captured_at": "2026-06-25T15:53:06.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00103.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00104",
+      "t_offset_ms": 3210739,
+      "captured_at": "2026-06-25T15:53:30.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00104.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00105",
+      "t_offset_ms": 3242915,
+      "captured_at": "2026-06-25T15:54:02.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00105.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00106",
+      "t_offset_ms": 3243415,
+      "captured_at": "2026-06-25T15:54:03.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00106.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00107",
+      "t_offset_ms": 3267915,
+      "captured_at": "2026-06-25T15:54:27.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00107.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00108",
+      "t_offset_ms": 3297915,
+      "captured_at": "2026-06-25T15:54:57.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00108.jpg",
+      "page_id": "page_4"
+    },
+    {
+      "frame_id": "frame_00109",
+      "t_offset_ms": 3535000,
+      "captured_at": "2026-06-25T15:58:55.000Z",
+      "image_uri": "mock://sessions/a1000002-0002-4002-8002-000000000002/frames/frame_00109.jpg",
+      "page_id": "page_4"
+    }
+  ]
+}

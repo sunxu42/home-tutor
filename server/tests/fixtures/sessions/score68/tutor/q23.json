@@ -1,0 +1,28 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "b2000001-0001-4001-8001-000000000001",
+  "question_id": "q23",
+  "analysis_status": "ready",
+  "verdict": "correct",
+  "reference_answer": "（作图题，路线比例与角度正确）",
+  "summary": "这题完成得很好！",
+  "explanation_paragraphs": [
+    "第 23 题你的答案是正确的。",
+    "关键步骤都想到了，继续保持。"
+  ],
+  "error_classification": {
+    "category": "correct"
+  },
+  "process_comment": "书写节奏平稳，步骤比较清楚。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

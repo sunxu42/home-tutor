@@ -1,0 +1,31 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "b2000002-0002-4002-8002-000000000002",
+  "question_id": "q20",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "①4  ②-13/24  ③63  ④1/8",
+  "summary": "第①题计算有误",
+  "explanation_paragraphs": [
+    "第 20 题你的答案是：① 3.3  ② 1/48  ③ 55  ④ 1/4。",
+    "带分数和乘法要一步步算，别急。",
+    "正确答案是：①4  ②-13/24  ③63  ④1/8。"
+  ],
+  "error_classification": {
+    "category": "calculation_error",
+    "subcategory": "mixed_number",
+    "confidence": 0.88
+  },
+  "process_comment": "这道题你写了大约 4 分钟，中间停笔较久，说明在认真想。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

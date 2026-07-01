@@ -1,0 +1,31 @@
+{
+  "schema_version": "home-tutor.tutor-content.v1",
+  "session_id": "a1000003-0003-4003-8003-000000000003",
+  "question_id": "q03",
+  "analysis_status": "ready",
+  "verdict": "wrong",
+  "reference_answer": "36；72",
+  "summary": "角度比理解反了",
+  "explanation_paragraphs": [
+    "第 3 题你的答案是：45；67.5。",
+    "顶角和底角比是 1:2，说明底角更大。",
+    "正确答案是：36；72。"
+  ],
+  "error_classification": {
+    "category": "concept_error",
+    "subcategory": "angle_ratio",
+    "confidence": 0.88
+  },
+  "process_comment": "书写节奏平稳，步骤比较清楚。",
+  "actions": [
+    {
+      "id": "explain_more",
+      "label": "详细讲讲",
+      "enabled": false
+    }
+  ],
+  "stale": false,
+  "generated_at": "2026-06-30T09:42:38.000Z",
+  "model": "mock-v2",
+  "error": null
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": "home-tutor.session-meta.v1",
+  "session_id": "a1000001-0001-4001-8001-000000000001",
+  "grade_level": "primary",
+  "subject": "math",
+  "started_at": "2026-06-22T14:00:00.000Z",
+  "ended_at": "2026-06-22T14:59:55.000Z",
+  "accuracy_percent": 53.0,
+  "pages": [
+    {
+      "page_id": "page_1",
+      "index": 1
+    },
+    {
+      "page_id": "page_2",
+      "index": 2
+    },
+    {
+      "page_id": "page_3",
+      "index": 3
+    },
+    {
+      "page_id": "page_4",
+      "index": 4
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "q01",
+      "page_id": "page_1",
+      "index_on_page": 1,
+      "number": 1
+    },
+    {
+      "question_id": "q02",
+      "page_id": "page_1",
+      "index_on_page": 2,
+      "number": 2
+    },
+    {
+      "question_id": "q03",
+      "page_id": "page_1",
+      "index_on_page": 3,
+      "number": 3
+    },
+    {
+      "question_id": "q04",
+      "page_id": "page_1",
+      "index_on_page": 4,
+      "number": 4
+    },
+    {
+      "question_id": "q05",
+      "page_id": "page_1",
+      "index_on_page": 5,
+      "number": 5
+    },
+    {
+      "question_id": "q06",
+      "page_id": "page_1",
+      "index_on_page": 6,
+      "number": 6
+    },
+    {
+      "question_id": "q07",
+      "page_id": "page_1",
+      "index_on_page": 7,
+      "number": 7
+    },
+    {
+      "question_id": "q08",
+      "page_id": "page_1",
+      "index_on_page": 8,
+      "number": 8
+    },
+    {
+      "question_id": "q09",
+      "page_id": "page_1",
+      "index_on_page": 9,
+      "number": 9
+    },
+    {
+      "question_id": "q10",
+      "page_id": "page_1",
+      "index_on_page": 10,
+      "number": 10
+    },
+    {
+      "question_id": "q11",
+      "page_id": "page_1",
+      "index_on_page": 11,
+      "number": 11
+    },
+    {
+      "question_id": "q12",
+      "page_id": "page_1",
+      "index_on_page": 12,
+      "number": 12
+    },
+    {
+      "question_id": "q13",
+      "page_id": "page_1",
+      "index_on_page": 13,
+      "number": 13
+    },
+    {
+      "question_id": "q14",
+      "page_id": "page_1",
+      "index_on_page": 14,
+      "number": 14
+    },
+    {
+      "question_id": "q15",
+      "page_id": "page_1",
+      "index_on_page": 15,
+      "number": 15
+    },
+    {
+      "question_id": "q16",
+      "page_id": "page_1",
+      "index_on_page": 16,
+      "number": 16
+    },
+    {
+      "question_id": "q17",
+      "page_id": "page_1",
+      "index_on_page": 17,
+      "number": 17
+    },
+    {
+      "question_id": "q18",
+      "page_id": "page_1",
+      "index_on_page": 18,
+      "number": 18
+    },
+    {
+      "question_id": "q19",
+      "page_id": "page_2",
+      "index_on_page": 1,
+      "number": 19
+    },
+    {
+      "question_id": "q20",
+      "page_id": "page_2",
+      "index_on_page": 2,
+      "number": 20
+    },
+    {
+      "question_id": "q21",
+      "page_id": "page_2",
+      "index_on_page": 3,
+      "number": 21
+    },
+    {
+      "question_id": "q22",
+      "page_id": "page_2",
+      "index_on_page": 4,
+      "number": 22
+    },
+    {
+      "question_id": "q23",
+      "page_id": "page_3",
+      "index_on_page": 1,
+      "number": 23
+    },
+    {
+      "question_id": "q24",
+      "page_id": "page_3",
+      "index_on_page": 2,
+      "number": 24
+    },
+    {
+      "question_id": "q25",
+      "page_id": "page_3",
+      "index_on_page": 3,
+      "number": 25
+    },
+    {
+      "question_id": "q26",
+      "page_id": "page_3",
+      "index_on_page": 4,
+      "number": 26
+    },
+    {
+      "question_id": "q27",
+      "page_id": "page_3",
+      "index_on_page": 5,
+      "number": 27
+    },
+    {
+      "question_id": "q28",
+      "page_id": "page_4",
+      "index_on_page": 1,
+      "number": 28
+    },
+    {
+      "question_id": "q29",
+      "page_id": "page_4",
+      "index_on_page": 2,
+      "number": 29
+    },
+    {
+      "question_id": "q30",
+      "page_id": "page_4",
+      "index_on_page": 3,
+      "number": 30
+    }
+  ],
+  "status": "complete",
+  "metadata": {
+    "data_source": "mock",
+    "exam_title": "六年级数学上册期末测试卷",
+    "student_label": "小杰（基础薄弱，约53分）",
+    "student_profile": "score53",
+    "target_score": 53,
+    "earned_score": 45.0,
+    "duration_minutes": 60.0
+  }
+}

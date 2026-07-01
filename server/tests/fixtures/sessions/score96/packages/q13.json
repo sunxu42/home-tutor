@@ -1,0 +1,105 @@
+{
+  "schema_version": "home-tutor.question-package.v1",
+  "session_id": "c3000003-0003-4003-8003-000000000003",
+  "question_id": "q13",
+  "grade_level": "primary",
+  "subject": "math",
+  "page_id": "page_1",
+  "index_on_page": 13,
+  "number": 13,
+  "question_type": "multiple_choice",
+  "status": "complete",
+  "updated_at": "2026-06-30T09:42:38.000Z",
+  "prompt": {
+    "text": "学校在公园的东偏北40°方向，公园在学校的（　）方向。",
+    "options": [
+      {
+        "key": "A",
+        "text": "北偏东40°"
+      },
+      {
+        "key": "B",
+        "text": "西偏南40°"
+      },
+      {
+        "key": "C",
+        "text": "北偏东50°"
+      },
+      {
+        "key": "D",
+        "text": "西偏南50°"
+      }
+    ]
+  },
+  "layout": {
+    "regions": [
+      {
+        "region_id": "r_prompt_q13",
+        "role": "printed_prompt",
+        "bbox": {
+          "x": 1.01,
+          "y": 0.08,
+          "w": 0.42,
+          "h": 0.1
+        }
+      },
+      {
+        "region_id": "r_answer_q13",
+        "role": "student_answer",
+        "bbox": {
+          "x": 1.241,
+          "y": 0.135,
+          "w": 0.18,
+          "h": 0.04
+        }
+      },
+      {
+        "region_id": "r_scratch_q13",
+        "role": "scratch_work",
+        "bbox": {
+          "x": 1.03,
+          "y": 0.105,
+          "w": 0.35,
+          "h": 0.06
+        }
+      }
+    ]
+  },
+  "answer_timeline": [
+    {
+      "t_offset_ms": 1028398,
+      "kind": "appeared",
+      "text": "B",
+      "frame_id": "frame_00045",
+      "confidence": 0.92
+    }
+  ],
+  "final_answer": {
+    "text": "B",
+    "confidence": 0.92
+  },
+  "focus_segments": [
+    {
+      "segment_index": 1,
+      "start_ms": 1003898,
+      "end_ms": 1056676,
+      "duration_ms": 52778
+    }
+  ],
+  "process_metrics": {
+    "first_touch_ms": 1003898,
+    "last_change_ms": 1028398,
+    "active_duration_ms": 52778,
+    "idle_periods_ms": [],
+    "revision_count": 0,
+    "stuck": false
+  },
+  "scratch_work": [],
+  "key_moments": [
+    {
+      "label": "final_answer",
+      "t_offset_ms": 1028398,
+      "frame_id": "frame_00045"
+    }
+  ]
+}

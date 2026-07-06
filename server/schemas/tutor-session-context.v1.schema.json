@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "home-tutor.tutor-session-context.v1",
+  "title": "TutorSessionContext",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "page",
+    "session_id",
+    "question_id",
+    "navigation",
+    "package",
+    "tutor",
+    "a2ui"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "home-tutor.tutor-session-context.v1"
+    },
+    "page": {
+      "const": "session_review"
+    },
+    "session_id": { "type": "string" },
+    "question_id": { "type": "string" },
+    "navigation": {
+      "type": "object",
+      "required": ["question_index", "total_questions"],
+      "properties": {
+        "question_index": { "type": "integer" },
+        "total_questions": { "type": "integer" },
+        "timeline_ms": { "type": "integer" }
+      }
+    },
+    "package": {
+      "type": "object",
+      "required": ["prompt_text", "final_answer", "verdict"],
+      "properties": {
+        "prompt_text": { "type": "string" },
+        "final_answer": { "type": "string" },
+        "verdict": { "enum": ["correct", "wrong", "unknown"] }
+      }
+    },
+    "tutor": { "type": "object" },
+    "a2ui": { "type": "object" },
+    "transcript": { "type": "array" },
+    "vision_hints": { "type": "array" }
+  }
+}

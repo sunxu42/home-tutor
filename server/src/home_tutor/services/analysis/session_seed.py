@@ -12,7 +12,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from home_tutor.models.session import Subject
 from home_tutor.services.analysis.session_crud import (
     create_session,
+    delete_session,
     get_session,
+    get_sessions,
     update_session,
 )
 
@@ -76,6 +78,19 @@ def _load_fixture_meta(child: Path) -> dict | None:
     }
 
 
+def list_fixture_session_ids(fixtures_root: Path) -> set[str]:
+    """Return session_ids declared in fixture meta.json files."""
+    if not fixtures_root.is_dir():
+        return set()
+
+    session_ids: set[str] = set()
+    for child in sorted(fixtures_root.iterdir()):
+        row = _load_fixture_meta(child)
+        if row is not None:
+            session_ids.add(row["session_id"])
+    return session_ids
+
+
 async def seed_sessions_from_fixtures(db: AsyncSession, fixtures_root: Path) -> int:
     """Insert DB rows for fixture sessions that are not yet in the database."""
     summary = await sync_sessions_from_fixtures(db, fixtures_root)
@@ -83,7 +98,7 @@ async def seed_sessions_from_fixtures(db: AsyncSession, fixtures_root: Path) -> 
 
 
 async def sync_sessions_from_fixtures(db: AsyncSession, fixtures_root: Path) -> dict[str, int]:
-    """Upsert SQLite rows from fixture meta and remove stale fixture-only rows."""
+    """Upsert SQLite rows from fixture meta and remove DB rows without fixture backing."""
     if not fixtures_root.is_dir():
         return {"created": 0, "updated": 0, "deleted": 0}
 
@@ -92,6 +107,8 @@ async def sync_sessions_from_fixtures(db: AsyncSession, fixtures_root: Path) -> 
         row = _load_fixture_meta(child)
         if row is not None:
             fixture_rows.append(row)
+
+    fixture_ids = {row["session_id"] for row in fixture_rows}
 
     created = 0
     updated = 0
@@ -126,4 +143,10 @@ async def sync_sessions_from_fixtures(db: AsyncSession, fixtures_root: Path) -> 
             )
             updated += 1
 
-    return {"created": created, "updated": updated, "deleted": 0}
+    deleted = 0
+    for session in await get_sessions(db):
+        if session.id not in fixture_ids:
+            await delete_session(db, session.id)
+            deleted += 1
+
+    return {"created": created, "updated": updated, "deleted": deleted}

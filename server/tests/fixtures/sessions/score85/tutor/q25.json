@@ -3,26 +3,34 @@
   "session_id": "c3000001-0001-4001-8001-000000000001",
   "question_id": "q25",
   "analysis_status": "ready",
-  "verdict": "correct",
-  "reference_answer": "2/5吨；5/36吨",
-  "summary": "这题完成得很好！",
+  "verdict": "wrong",
+  "reference_answer": "2/5吨；1/4吨",
+  "summary": "第一个答案正确，第二个答案算错啦！",
   "explanation_paragraphs": [
-    "第 25 题你的答案是正确的。",
-    "关键步骤都想到了，继续保持。"
+    "先算2/3小时：每小时3/5吨，乘以2/3得6/15，约分就是2/5吨，你算对了！",
+    "再算25分钟：25分钟是25/60=5/12小时。乘以3/5得15/60，就是1/4吨哦。",
+    "你写成了5/36吨，可能是把分数乘反了或者单位换算错了。仔细检查一下，加油！"
   ],
-  "error_classification": {
-    "category": "correct"
-  },
-  "process_comment": "书写节奏平稳，步骤比较清楚。",
   "actions": [
     {
       "id": "explain_more",
       "label": "详细讲讲",
-      "enabled": false
+      "enabled": true
+    },
+    {
+      "id": "give_hint",
+      "label": "给个提示",
+      "enabled": true
     }
   ],
   "stale": false,
-  "generated_at": "2026-06-30T09:42:38.000Z",
-  "model": "mock-v2",
-  "error": null
+  "generated_at": "2026-07-06T02:53:36.153907Z",
+  "model": "deepseek-v4-flash",
+  "error": null,
+  "process_comment": "你只写了一次答案，没有修改过程。第一个答案很棒，但第二个答案算错了，下次记得把时间单位统一再算哦。",
+  "error_classification": {
+    "category": "calculation_error",
+    "subcategory": "fraction_multiplication",
+    "confidence": 0.95
+  }
 }

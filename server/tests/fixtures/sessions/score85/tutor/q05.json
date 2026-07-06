@@ -5,24 +5,27 @@
   "analysis_status": "ready",
   "verdict": "correct",
   "reference_answer": "425；400",
-  "summary": "这题完成得很好！",
+  "summary": "正确算出出粉率问题",
   "explanation_paragraphs": [
-    "第 5 题你的答案是正确的。",
-    "关键步骤都想到了，继续保持。"
+    "出粉率85%表示每100千克小麦能磨85千克面粉。",
+    "第一问：500千克小麦磨面粉，500×85%=425千克。",
+    "第二问：340千克面粉需小麦，340÷85%=400千克。"
   ],
-  "error_classification": {
-    "category": "correct"
-  },
-  "process_comment": "写得比较快，说明这类题你已经比较熟练。",
   "actions": [
     {
       "id": "explain_more",
       "label": "详细讲讲",
-      "enabled": false
+      "enabled": true
+    },
+    {
+      "id": "give_hint",
+      "label": "给个提示",
+      "enabled": true
     }
   ],
   "stale": false,
-  "generated_at": "2026-06-30T09:42:38.000Z",
-  "model": "mock-v2",
-  "error": null
+  "generated_at": "2026-07-06T02:43:19.661493Z",
+  "model": "deepseek-v4-flash",
+  "error": null,
+  "process_comment": "你快速准确地写下了答案，没有修改或犹豫，说明对出粉率很熟悉！"
 }

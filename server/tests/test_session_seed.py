@@ -20,6 +20,15 @@ FIXTURE_SESSION_IDS = {
 }
 
 
+def test_list_sessions_excludes_orphan_db_rows() -> None:
+    res = client.get("/api/sessions")
+    assert res.status_code == 200
+    body = res.json()
+    ids = {item["id"] for item in body}
+    assert FIXTURE_SESSION_IDS.issubset(ids)
+    assert "f0000001-0001-4001-8001-000000000099" not in ids
+
+
 def test_list_sessions_includes_fixture_seeds() -> None:
     res = client.get("/api/sessions")
     assert res.status_code == 200

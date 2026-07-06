@@ -5,17 +5,13 @@
   "analysis_status": "ready",
   "verdict": "wrong",
   "reference_answer": "3:4；5:9；5:12；3:2",
-  "summary": "这题还有提升空间",
+  "summary": "前两个正确，后两个单位换算错误",
   "explanation_paragraphs": [
-    "第 21 题你的答案是：3:4；5:9；1:2；2:3。",
-    "正确答案是：3:4；5:9；5:12；3:2。",
-    "回忆一下本题用到的知识点，再练一道类似的。"
+    "小朋友，我们一起来检查这4个化简比。",
+    "前两个是正确的，但第三题500千克和1.2吨要统一单位，1.2吨=1200千克，500:1200=5:12，不是1:2哦。",
+    "第四题1.2平方米和80平方分米，1.2平方米=120平方分米，120:80=3:2，你写成了2:3，方向反了。",
+    "很好的是你化简方法没错，记得统一单位再比哦，加油！"
   ],
-  "error_classification": {
-    "category": "unknown",
-    "confidence": 0.6
-  },
-  "process_comment": "书写节奏平稳，步骤比较清楚。",
   "actions": [
     {
       "id": "explain_more",
@@ -24,7 +20,13 @@
     }
   ],
   "stale": false,
-  "generated_at": "2026-06-30T09:42:38.000Z",
-  "model": "mock-v2",
-  "error": null
+  "generated_at": "2026-07-01T09:04:50.377751Z",
+  "model": "deepseek-v4-flash",
+  "error": null,
+  "process_comment": "观察过程，你只写了一次答案，没有修改，可能没有仔细检查单位换算。下次做完可以再核对一下单位是否统一。",
+  "error_classification": {
+    "category": "calculation_error",
+    "subcategory": "unit_conversion_error",
+    "confidence": 0.95
+  }
 }

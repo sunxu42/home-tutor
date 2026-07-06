@@ -63,7 +63,6 @@ export async function request<T>(path: string, init?: RequestInit): Promise<T> {
 
 export const api = {
   health: () => request<{ status: string }>('/health'),
-  getData: () => request<{ message: string }>('/data'),
 
   sessions: {
     list: (subject?: Subject) =>

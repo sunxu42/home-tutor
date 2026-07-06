@@ -1,4 +1,4 @@
-"""WebRTC signaling endpoints."""
+"""WebRTC signaling endpoints (experimental — stub, not used in production)."""
 
 from fastapi import APIRouter
 from pydantic import BaseModel

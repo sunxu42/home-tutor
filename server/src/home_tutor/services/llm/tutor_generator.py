@@ -66,7 +66,8 @@ def normalize_llm_payload(
         "summary": str(payload.get("summary", "")),
         "explanation_paragraphs": paragraphs,
         "actions": [
-            {"id": "explain_more", "label": "详细讲讲", "enabled": False},
+            {"id": "explain_more", "label": "详细讲讲", "enabled": True},
+            {"id": "give_hint", "label": "给个提示", "enabled": True},
         ],
         "stale": False,
         "generated_at": datetime.now(UTC).isoformat().replace("+00:00", "Z"),

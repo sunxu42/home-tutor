@@ -1,4 +1,4 @@
-"""WebSocket handlers."""
+"""WebSocket handlers (experimental — echo-only, not used in production)."""
 
 import json
 

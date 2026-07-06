@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import time
+from collections.abc import AsyncIterator
 from typing import Any
 
 import httpx
@@ -59,6 +60,73 @@ class LlmClient:
                 messages=messages,
             )
         return await self._chat_json_request(url=url, headers=headers, payload=payload)
+
+    async def chat_stream_content(
+        self,
+        provider: LlmProviderConfig,
+        *,
+        system_prompt: str,
+        user_prompt: str,
+    ) -> AsyncIterator[str]:
+        """Stream text deltas from an OpenAI-compatible chat completions API."""
+        url = f"{provider.base_url}/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {provider.api_key}",
+            "Content-Type": "application/json",
+        }
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ]
+        payload = {
+            "model": provider.model,
+            "messages": messages,
+            "response_format": {"type": "json_object"},
+            "temperature": 0.2,
+            "stream": True,
+        }
+
+        log_milestone(logger, "LLM_STREAM_REQUEST", model=provider.model)
+        if settings.log_mode in {"verbose", "debug"}:
+            combined = f"[system] {system_prompt}\n[user] {user_prompt}"
+            log_trace(logger, "LLM_PROMPT", prompt_preview=combined)
+
+        async with httpx.AsyncClient(timeout=self._timeout) as client:
+            try:
+                async with client.stream("POST", url, headers=headers, json=payload) as response:
+                    if response.status_code >= 400:
+                        body_preview = (await response.aread())[:500]
+                        logger.warning(
+                            "LLM_HTTP_ERROR",
+                            status_code=response.status_code,
+                            body_preview=body_preview.decode(errors="replace"),
+                        )
+                        raise LlmClientError(
+                            f"LLM request failed with status {response.status_code}",
+                        )
+
+                    async for line in response.aiter_lines():
+                        if not line.startswith("data: "):
+                            continue
+                        data = line[6:].strip()
+                        if data == "[DONE]":
+                            break
+                        try:
+                            chunk = json.loads(data)
+                        except json.JSONDecodeError:
+                            continue
+                        choices = chunk.get("choices") or []
+                        if not choices:
+                            continue
+                        delta = choices[0].get("delta", {}).get("content")
+                        if isinstance(delta, str) and delta:
+                            yield delta
+            except httpx.TimeoutException as exc:
+                raise LlmClientError(
+                    f"LLM 请求超时（{self._timeout:g}s），请稍后重试或增大 LLM_REQUEST_TIMEOUT_SEC",
+                ) from exc
+            except httpx.HTTPError as exc:
+                raise LlmClientError(f"LLM 请求失败：{exc}") from exc
 
     async def _chat_json_traced(
         self,

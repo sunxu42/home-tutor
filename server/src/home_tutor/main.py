@@ -12,11 +12,14 @@ from home_tutor.api.http.routes import router as http_router
 from home_tutor.api.middleware.logging import RequestLoggingMiddleware
 from home_tutor.api.webrtc.signaling import router as webrtc_router
 from home_tutor.api.websocket.handler import router as ws_router
+from home_tutor.api.websocket.speech_handler import router as speech_ws_router
 from home_tutor.core.config import settings
 from home_tutor.core.logging import get_logger, log_trace, setup_logging
 from home_tutor.models.database import init_db
-from home_tutor.services.llm.analysis_service import get_analysis_service
+from home_tutor.api.deps import get_analysis_service, get_session_store
 from home_tutor.services.llm.langfuse_tracing import flush_langfuse, init_langfuse
+from home_tutor.services.tutor_chat.copilot_sdk import get_copilot_sdk
+from copilotkit.integrations.fastapi import add_fastapi_endpoint
 
 setup_logging(settings)
 
@@ -27,7 +30,7 @@ async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
     init_langfuse()
     await init_db()
     loop = asyncio.get_running_loop()
-    get_analysis_service().bind_loop(loop)
+    get_analysis_service(get_session_store()).bind_loop(loop)
     log_trace(
         get_logger(__name__),
         "SERVER_STARTED",
@@ -54,7 +57,12 @@ def create_app() -> FastAPI:
         return JSONResponse(status_code=exc.status_code, content={"detail": exc.detail})
 
     @app.exception_handler(Exception)
-    async def unhandled_exception_handler(_request: Request, _exc: Exception) -> JSONResponse:
+    async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+        get_logger(__name__).exception(
+            "unhandled_error",
+            path=str(request.url.path),
+            exc_info=exc,
+        )
         return JSONResponse(status_code=500, content={"detail": "Internal server error"})
 
     app.add_middleware(RequestLoggingMiddleware)
@@ -66,9 +74,12 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
+  # Register v2-compatible /info before the CopilotKit catch-all route.
     app.include_router(http_router, prefix="/api")
     app.include_router(ws_router)
+    app.include_router(speech_ws_router)
     app.include_router(webrtc_router, prefix="/api/webrtc")
+    add_fastapi_endpoint(app, get_copilot_sdk(), "/api/copilotkit")
 
     return app
 

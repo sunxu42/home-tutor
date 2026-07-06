@@ -41,6 +41,18 @@ class Settings(BaseSettings):
     llm_skip_fixture_tutor: bool = True
     llm_request_timeout_sec: float = 30.0
 
+    # Alibaba Cloud Intelligent Speech Interaction (NLS)
+    aliyun_speech_app_key: str = ""
+    aliyun_speech_token: str = ""
+    aliyun_speech_access_key_id: str = ""
+    aliyun_speech_access_key_secret: str = ""
+    aliyun_speech_region: str = "cn-shanghai"
+    aliyun_speech_gateway_url: str = "wss://nls-gateway-cn-shanghai.aliyuncs.com/ws/v1"
+    aliyun_speech_tts_voice: str = "xiaoyun"
+    aliyun_speech_tts_format: str = "pcm"
+    aliyun_speech_tts_sample_rate: int = 16000
+    speech_ws_secret: str = ""
+
     @computed_field  # type: ignore[prop-decorator]
     @property
     def resolved_log_level(self) -> str:

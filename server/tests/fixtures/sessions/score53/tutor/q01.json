@@ -2,30 +2,11 @@
   "schema_version": "home-tutor.tutor-content.v1",
   "session_id": "a1000001-0001-4001-8001-000000000001",
   "question_id": "q01",
-  "analysis_status": "ready",
-  "verdict": "wrong",
-  "reference_answer": "180",
-  "summary": "忘了再乘六分之七",
-  "explanation_paragraphs": [
-    "第 1 题你的答案是：210。",
-    "你算出了大班总人数，但题目要的是中班人数。",
-    "正确答案是：180。"
-  ],
-  "error_classification": {
-    "category": "concept_error",
-    "subcategory": "fraction_of_quantity",
-    "confidence": 0.88
-  },
-  "process_comment": "写得比较快，说明这类题你已经比较熟练。",
-  "actions": [
-    {
-      "id": "explain_more",
-      "label": "详细讲讲",
-      "enabled": false
-    }
-  ],
+  "analysis_status": "generating",
+  "verdict": "unknown",
+  "reference_answer": "",
+  "summary": "",
+  "explanation_paragraphs": [],
   "stale": false,
-  "generated_at": "2026-06-30T09:42:38.000Z",
-  "model": "mock-v2",
   "error": null
 }

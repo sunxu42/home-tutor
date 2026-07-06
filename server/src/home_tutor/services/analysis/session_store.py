@@ -24,11 +24,13 @@ class SessionStore:
 
     def __init__(self, root: Path) -> None:
         self._root = root
+        self._session_dir_index: dict[str, Path] | None = None
 
-    def resolve_session_dir(self, session_id: str) -> Path:
-        """Find session directory by meta.json session_id."""
+    def _rebuild_session_dir_index(self) -> dict[str, Path]:
+        """Build session_id → directory mapping for O(1) lookups."""
+        index: dict[str, Path] = {}
         if not self._root.is_dir():
-            raise SessionNotFoundError(f"Sessions root not found: {self._root}")
+            return index
 
         for child in self._root.iterdir():
             if not child.is_dir():
@@ -37,8 +39,29 @@ class SessionStore:
             if not meta_path.is_file():
                 continue
             meta = json.loads(meta_path.read_text(encoding="utf-8"))
-            if meta.get("session_id") == session_id:
-                return child
+            session_id = meta.get("session_id")
+            if isinstance(session_id, str):
+                index[session_id] = child
+
+        return index
+
+    def _ensure_session_dir_index(self) -> dict[str, Path]:
+        if self._session_dir_index is None:
+            self._session_dir_index = self._rebuild_session_dir_index()
+        return self._session_dir_index
+
+    def invalidate_session_dir_index(self) -> None:
+        """Clear cached session directory index after writes."""
+        self._session_dir_index = None
+
+    def resolve_session_dir(self, session_id: str) -> Path:
+        """Find session directory by meta.json session_id."""
+        if not self._root.is_dir():
+            raise SessionNotFoundError(f"Sessions root not found: {self._root}")
+
+        session_dir = self._ensure_session_dir_index().get(session_id)
+        if session_dir is not None:
+            return session_dir
 
         raise SessionNotFoundError(f"Session not found: {session_id}")
 

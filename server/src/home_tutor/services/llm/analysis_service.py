@@ -365,11 +365,14 @@ class TutorAnalysisService:
 _service: TutorAnalysisService | None = None
 
 
-def get_analysis_service() -> TutorAnalysisService:
+def get_analysis_service(store: SessionStore | None = None) -> TutorAnalysisService:
     """Return the process-wide analysis service singleton."""
     global _service
     if _service is None:
-        _service = TutorAnalysisService(store=SessionStore(settings.session_fixtures_root))
+        resolved = store or SessionStore(settings.session_fixtures_root)
+        _service = TutorAnalysisService(store=resolved)
+    elif store is not None:
+        _service.store = store
     return _service
 
 

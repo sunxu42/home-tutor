@@ -16,6 +16,7 @@ dependencies = [
     "aiosqlite>=0.20.0",
     "langfuse>=3.0.0",
     "structlog>=24.0.0",
+    "copilotkit>=0.1.94",
 ]
 
 [project.scripts]

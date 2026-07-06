@@ -154,6 +154,17 @@
     background: hsl(var(--secondary) / 0.25);
   }
 
+  /* A2UI DeferredChild 在组件注册前会显示 shimmer，讲解区改为静态占位避免闪烁 */
+  .session-review-tutor .a2ui-surface-host .a2ui-surface {
+    min-height: 4rem;
+  }
+
+  .session-review-tutor .a2ui-surface [style*='a2ui-shimmer'] {
+    animation: none !important;
+    background: hsl(var(--muted) / 0.35) !important;
+    background-size: auto !important;
+  }
+
   @media (min-width: 768px) {
     .session-review-layout {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

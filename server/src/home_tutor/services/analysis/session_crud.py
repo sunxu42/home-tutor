@@ -37,11 +37,17 @@ async def get_session(db: AsyncSession, session_id: str) -> Session | None:
 async def get_sessions(
     db: AsyncSession,
     subject: Subject | None = None,
+    *,
+    session_ids: set[str] | None = None,
 ) -> list[Session]:
-    """Get all sessions, optionally filtered by subject. Ordered by session_time desc."""
+    """Get sessions, optionally filtered by subject and/or id set. Ordered by session_time desc."""
     stmt = select(Session)
     if subject is not None:
         stmt = stmt.where(Session.subject == subject)
+    if session_ids is not None:
+        if not session_ids:
+            return []
+        stmt = stmt.where(Session.id.in_(session_ids))
     stmt = stmt.order_by(Session.session_time.desc())
     result = await db.execute(stmt)
     return list(result.scalars().all())

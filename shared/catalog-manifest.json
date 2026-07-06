@@ -1,0 +1,12 @@
+{
+  "catalogId": "home-tutor",
+  "surfaceId": "tutor-panel",
+  "components": [
+    "TutorText",
+    "ActionChip",
+    "AnswerCompare",
+    "ProcessStep",
+    "HintLadder",
+    "KeyFrameThumb"
+  ]
+}

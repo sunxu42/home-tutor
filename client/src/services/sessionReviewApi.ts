@@ -1,14 +1,23 @@
+import {
+  parseQuestionDetailResponse,
+  parseSseTutorContent,
+  parseTutorViewResponse,
+} from '@/schemas/session-review'
 import type { QuestionDetailResponse, TutorContent, TutorViewResponse } from '@/types/session-review'
 import { request } from '@/services/api'
 
 const API_BASE = import.meta.env.VITE_API_BASE ?? '/api'
 
 export const sessionReviewApi = {
-  getTutorView: (sessionId: string) =>
-    request<TutorViewResponse>(`/sessions/${sessionId}/tutor-view`),
+  getTutorView: async (sessionId: string): Promise<TutorViewResponse> => {
+    const data = await request<unknown>(`/sessions/${sessionId}/tutor-view`)
+    return parseTutorViewResponse(data) as unknown as TutorViewResponse
+  },
 
-  getQuestion: (sessionId: string, questionId: string) =>
-    request<QuestionDetailResponse>(`/sessions/${sessionId}/questions/${questionId}`),
+  getQuestion: async (sessionId: string, questionId: string): Promise<QuestionDetailResponse> => {
+    const data = await request<unknown>(`/sessions/${sessionId}/questions/${questionId}`)
+    return parseQuestionDetailResponse(data) as unknown as QuestionDetailResponse
+  },
 
   analyze: (sessionId: string, questionId: string) =>
     request<{ analysis_status: string }>(
@@ -34,7 +43,7 @@ export const sessionReviewApi = {
     })
 
     source.addEventListener('tutor', (event) => {
-      const tutor = JSON.parse((event as MessageEvent).data) as TutorContent
+      const tutor = parseSseTutorContent(JSON.parse((event as MessageEvent).data)) as TutorContent
       handlers.onTutor?.(tutor)
       source.close()
     })

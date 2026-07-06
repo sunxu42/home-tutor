@@ -10,6 +10,22 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (
+            id.includes('node_modules/@copilotkit') ||
+            id.includes('node_modules/@ag-ui') ||
+            id.includes('node_modules/@a2ui')
+          ) {
+            return 'copilotkit'
+          }
+        },
+      },
+    },
+  },
   server: {
     port: 5173,
     proxy: {
